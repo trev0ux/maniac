@@ -1,0 +1,126 @@
+@import "./_base/typography";
+@import "./_base/variables";
+@import "bootstrap/scss/bootstrap";
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+    
+  padding: 12px 24px;
+  position: relative;
+  @include font-size($font-regular);
+  font-weight: $font-weight--medium;
+  transition: box-shadow .2s linear;
+
+  @include media-breakpoint-down(sm) {
+    @include font-size($font-small);
+  }
+
+  &:hover, &:active {
+
+    .arrows-block .arrows-icon {
+      animation: translateAnimationOut 0.3s ease;
+    }
+  }
+
+  .arrows-block {
+    z-index: 0;
+    width: 1.75rem;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+
+    .arrows-icon {
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 0.5rem;
+      justify-content: flex-start;
+      align-items: center;
+      display: flex;
+      transform: translate(-60%);
+
+      svg {
+        flex: none;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@keyframes translateAnimationOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+.accordion-enter-active,
+.accordion-leave-active {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 100px;
+  opacity: 1;
+}
+.accordion-enter-from,
+.accordion-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+body {
+  font-family: $font-family--primary;
+}
+
+html body * {
+  background-attachment: scroll !important;
+}
+
+.form-control {
+  border-color: rgba($primary, 0.3) !important;
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba($primary, 0.2) !important;
+  }
+}
+
+.container-fluid {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+.btn {
+  &:not(.btn-link) {
+    padding: 12px 24px;
+    border-radius: 8px;
+
+    @include media-breakpoint-down(sm) {
+      @include font-size($font-small);
+    }
+  }
+
+  &-secondary {
+    --bs-primary: #fff;
+    --bs-btn-bg: #fff !important;
+    --bs-btn-border-color: #fff !important;
+    --bs-btn-hover-bg: #fff !important;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-focus-shadow-rgb: rgb(0, 0, 0, 0.3);
+
+    color: $light-black;
+
+    &:hover {
+      color: $light-black;
+    }
+  }
+}
+
+.form-select {
+  height: 46px;
+}

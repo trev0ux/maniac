@@ -1,0 +1,135 @@
+@import "../_base/typography";
+@import "../_base/variables";
+@import "bootstrap/scss/_functions";
+@import "bootstrap/scss/_variables";
+@import "bootstrap/scss/mixins/_breakpoints";
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid $card-border;
+
+    > article {
+        display: flex;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: row-reverse;
+        }
+
+        > div {
+            &:nth-child(1) {
+                @include media-breakpoint-down(md) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                h4 {
+                    @include font-size($font-xx-big);
+                    color: $light-black;
+                    margin-bottom: 16px;
+                    font-weight: $font-weight--regular;
+
+                    &:nth-child(3) {
+                        margin-top: 32px;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        @include font-size($font-small);
+                    }
+                }
+
+                svg {
+                    width: 160px;
+                    margin: 32px 0;
+                    height: 115px;
+                    fill: $primary;
+
+                    @include media-breakpoint-down(md) {
+                        width: 90px;
+                        margin: 0 0 16px;
+                        height: 65px;     
+                        order: -1;               
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    &:nth-child(1) {
+                        display: flex;
+                        gap: 32px;
+                        margin-bottom: 50px;
+
+                        @include media-breakpoint-down(md) {
+                            flex-direction: column;
+                            gap: 16px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 32px;
+
+                        @include media-breakpoint-down(md) {
+                            gap: 16px;
+                        }
+                    }
+
+                    li, a {
+                        @include font-size($font-xx-big);
+                        color: $light-black;
+                        font-weight: $font-weight--regular;   
+                        text-decoration: none;
+
+                        @include media-breakpoint-down(md) {
+                            @include font-size($font-small);
+                        }
+                    }
+
+                    h6 {
+                        @include font-size($font-x-big);
+                        color: $light-black;
+                        font-weight: $font-weight--semibold;   
+                        margin-bottom: 0; 
+                        
+                        @include media-breakpoint-down(md) {
+                            @include font-size($font-small);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    > div {
+        display: flex;
+        align-items: flex-end;
+        gap: 28px;
+
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            @include font-size($font-x-big);
+            color: $light-black;
+            margin-bottom: 0;
+            font-weight: $font-weight--regular;
+            white-space: nowrap;
+
+            @include media-breakpoint-down(md) {
+                @include font-size($font-regular);
+            }
+        }
+    }
+}
