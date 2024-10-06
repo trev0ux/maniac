@@ -1,19 +1,15 @@
 <template>
-    <div>
-      <header-component></header-component>
-         <slot></slot>
-         <footer-component></footer-component>
-    </div>
-  </template>
-  
-  <script>
-  import HeaderComponent from "../components/header/header.vue";
-  import FooterComponent from "../components/footer/footer.vue";
+  <div>
+    <Header />
+    <slot></slot>
+    <Footer />
+  </div>
+</template>
 
-  export default {
-    components: { HeaderComponent, FooterComponent },
-  };
-  </script>
-  
-  <style></style>
-  
+<script setup>
+import Header from "@/components/layouts/Header.vue";
+import Footer from "@/components/layouts/Footer.vue";
+
+</script>
+
+<style></style>

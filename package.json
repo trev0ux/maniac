@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
+    "@studio-freight/lenis": "^1.0.42",
     "bootstrap": "^5.3.3",
+    "lenis": "^1.1.13",
     "nuxt": "^3.12.1",
     "nuxt-icon": "^0.6.10",
     "nuxt-image": "^0.0.4",

@@ -6,7 +6,6 @@
         <h4>contato@maniac.com</h4>
         <h4>(71) 99999-9999</h4>
         <h4>Salvador, Bahia</h4>
-        <Icon name="LogoIcon"></Icon>
       </div>
       <div>
         <ul>
@@ -22,7 +21,7 @@
       </div>
     </article>
     <div>
-        <NuxtImg src="/maniac.png" alt="maniac text"></NuxtImg>
+      <Icon name="LogoIcon"></Icon>
         <p>© 2024 - Todos os direitos reservados.</p>
     </div>
   </footer>

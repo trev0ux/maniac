@@ -2,6 +2,27 @@
 @import "./_base/variables";
 @import "bootstrap/scss/bootstrap";
 
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+
 .btn-primary {
   display: flex;
   align-items: center;
@@ -56,18 +77,30 @@
   }
 }
 
-.accordion-enter-active,
-.accordion-leave-active {
-  transition: max-height 0.3s ease, opacity 0.3s ease;
-  max-height: 100px;
-  opacity: 1;
+.slide-swap-enter-active,
+.slide-swap-leave-active {
+  transition: all 0.5s ease;
 }
-.accordion-enter-from,
-.accordion-leave-to {
-  max-height: 0;
+
+.slide-swap-enter-from {
+  transform: translateY(100%);
   opacity: 0;
 }
 
+.slide-swap-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-swap-leave-from {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-swap-leave-to {
+  transform: translateY(-100%);
+  opacity: 0;
+}
 body {
   font-family: $font-family--primary;
 }

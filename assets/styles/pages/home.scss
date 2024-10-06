@@ -6,6 +6,15 @@
 
 .homepage {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+
+    @include media-breakpoint-down(lg) {
+        gap: 80px;
+    }
 
     &__whatsapp-icon {
         position: fixed;
@@ -30,10 +39,13 @@
     flex-direction: column;
     align-items: center;
     max-width: 940px;
-    margin: 200px auto 200px;
+    margin: 200px auto 0px;
+    position: relative;
 
     @include media-breakpoint-down(sm) {
-        margin: 120px auto 80px;
+        margin: 120px auto 0px;
+        text-align: left;
+        align-items: flex-start;
     }
 
     h1 {
@@ -56,17 +68,63 @@
 
         @include media-breakpoint-down(sm) {
             @include font-size($font-small);
+            padding: 0;
+        }
+    }
+
+    &__grid-block {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin: 40px 0 0;
+    }
+
+    &__grid-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: 
+        radial-gradient(circle, rgba(0, 0, 0, 0.3), transparent 70%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        max-width: 750px;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(md) {
+            width: 750px;
+        }
+
+        > div {
+            background-color: $white;
+            width: 106px;
+            height: 106px;
+
+            @include media-breakpoint-down(md) {
+                width: 75px;
+                height: 75px;
+            }
         }
     }
 }
 
 .how-work {
-    padding: 60px 0 130px;
-    background: url("/background-points.png") no-repeat;
-    background-size: cover;
+    padding: 60px 0 80px;
+    background: url("/background-points.png");
+    background-size: contain;
 
     @include media-breakpoint-down(md) {
         background-size: 1000px 1000px;
+        padding: 30px 0 40px;
     }
 
     &__header {
@@ -90,6 +148,7 @@
             @include media-breakpoint-down(md) {
                 @include font-size($font-big);
                 line-height: 28px;
+                text-align: left;
             }
         }
 
@@ -122,8 +181,8 @@
         height: 130%;
         width: 100%;
         display: flex;
-        overflow: hidden; 
-        z-index: 0;           
+        overflow: hidden;
+        z-index: 0;
     }
 
     &__item {
@@ -134,14 +193,13 @@
         background-color: $white;
         flex: 0 0 calc(25% - 24px);
         position: relative;
-        box-shadow: 0 20px 25px rgba($black-grey, .06);
+        box-shadow: 0 20px 25px rgba($black-grey, 0.06);
 
         > img {
-            z-index: 1;  
+            z-index: 1;
         }
 
-        
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             flex: 0 0 calc(50% - 24px);
         }
 
@@ -150,7 +208,8 @@
         }
 
         &--change-color {
-            span,  h3 {
+            span,
+            h3 {
                 color: $white !important;
                 z-index: 1;
                 display: block;
@@ -159,7 +218,7 @@
         }
 
         &--cascate-effect {
-            flex-grow: 1; 
+            flex-grow: 1;
             background-color: $primary;
             transition: transform 0.3s linear;
         }
@@ -170,6 +229,7 @@
                 bottom: -90px;
                 position: relative;
                 height: 245px;
+                z-index: 1;
 
                 @include media-breakpoint-down(sm) {
                     bottom: 0px;
@@ -187,6 +247,7 @@
                 position: relative;
                 bottom: -60px;
                 height: 245px;
+                z-index: 1;
 
                 @include media-breakpoint-down(sm) {
                     bottom: 0px;
@@ -204,6 +265,8 @@
                 position: relative;
                 bottom: 10px;
                 height: 225px;
+                z-index: 1;
+
             }
         }
 
@@ -215,6 +278,7 @@
                 position: relative;
                 bottom: -50px;
                 height: 225px;
+                z-index: 1;
 
                 @include media-breakpoint-down(sm) {
                     bottom: 0;
@@ -240,31 +304,28 @@
 }
 
 .projects {
-    margin-bottom: 180px;
+    margin-bottom: 0px;
 
-    @include media-breakpoint-down(sm) {
-        margin-bottom: 82px;
-    }
 
     &__info {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        margin: 80px 0;
+        margin-bottom: 80px;
         gap: 8%;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
-            margin: 80px 0 50px;
+            margin-bottom: 50px;
         }
 
         > div {
             display: flex;
             align-items: center;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 flex-direction: column;
                 align-items: flex-start;
             }
@@ -276,7 +337,7 @@
             font-weight: $font-weight--regular;
             padding: 0 34px;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 padding: 0px;
                 margin-bottom: 8px;
                 @include font-size($font-small);
@@ -290,7 +351,7 @@
             max-width: 865px;
             margin-bottom: 0;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 @include font-size($font-big);
                 line-height: 28px;
             }
@@ -358,31 +419,27 @@
 }
 
 .services {
-    margin-bottom: 180px;
-
-    @include media-breakpoint-down(sm) {
-        margin-bottom: 82px;
-    }
+    perspective: 1000px;
 
     &__info {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        margin: 80px 0;
+        margin-bottom: 80px;
         gap: 2%;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
-            margin: 80px 0 50px;
+            margin-bottom: 50px;
         }
 
         > div {
             display: flex;
             align-items: center;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 flex-direction: column;
                 align-items: flex-start;
             }
@@ -394,7 +451,7 @@
             font-weight: $font-weight--regular;
             padding: 0 34px;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 padding: 0px;
                 margin-bottom: 8px;
                 @include font-size($font-small);
@@ -407,7 +464,7 @@
             color: $light-black;
             margin-bottom: 0;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 @include font-size($font-big);
                 line-height: 28px;
             }
@@ -430,7 +487,7 @@
         margin: 58px 0 26px;
 
         @include media-breakpoint-down(sm) {
-            margin: 0 0 28px;
+            margin: 0;
         }
 
         h3 {
@@ -440,52 +497,93 @@
             align-items: center;
             font-weight: $font-weight--light;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 @include font-size($font-regular);
             }
 
             svg {
-                transform: rotate(-90deg);
+                transform: rotate(0deg);
                 margin-right: 8px;
             }
         }
     }
 
     &__progress-bar {
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 4px;
+        }
+        
+        &--active {
+            h3 {
+                color: $primary !important;
+            }
+        }
         h3 {
             position: relative;
             @include font-size($font-x-large);
-            border-bottom: 3px solid rgba($primary, 0.4);
+            color: rgba($primary, 0.1);
+
             font-weight: $font-weight--semibold;
             padding-bottom: 16px;
             cursor: pointer;
             margin-bottom: 0;
             display: inline;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 @include font-size($font-xx-big);
+                padding-bottom: 12px;
             }
 
-            span {
-                background-color: $primary;
-                height: 3px;
+            &:after {
+                content: "";
+                height: 4px;
                 display: inline-block;
                 position: absolute;
                 bottom: -3px;
                 left: 0;
+                width: 100%;
+                background-color: rgba($primary, 0.1);
+                border-radius: 8px;
+            }
+
+            span {
+                background-color: $primary;
+                height: 4px;
+                display: inline-block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                transition: 0.3s all linear;
             }
         }
     }
 
-    &__content {
+    section {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        max-width: 580px;
         margin-top: 32px;
+
+        @include media-breakpoint-down(lg) {
+            height: 150px;
+            max-width: 350px;
+        }
+    }
+
+    &__content {
+        backface-visibility: hidden;
         @include font-size($font-medium);
         font-weight: $font-weight--regular;
         color: $light-black;
         margin-bottom: 0;
         line-height: 30px;
+        position: absolute;
+        width: 100%;
+        transition: all 0.5s ease;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             @include font-size($font-small);
             line-height: 24px;
         }
@@ -500,7 +598,11 @@
             width: 100%;
             border-radius: 12px;
             object-fit: cover;
-            max-height: 720px;
+            max-height: 680px;
+
+            @include media-breakpoint-down(lg) {
+                max-height: 320px;
+            }
 
             @include media-breakpoint-down(sm) {
                 height: 240px;
@@ -518,7 +620,7 @@
         > div {
             padding: 32px 0;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 padding: 16px 0;
             }
 
@@ -553,16 +655,23 @@
 
     > article {
         display: flex;
+        justify-content: space-between;
         gap: 4%;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             flex-direction: column;
         }
 
         > div {
-            flex: 0 0 48%;
+            flex: 0 0 46%;
 
-            @include media-breakpoint-down(sm) {
+            &:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            @include media-breakpoint-down(lg) {
                 flex: 0 0 100%;
             }
         }
@@ -570,31 +679,27 @@
 }
 
 .plans {
-    margin-bottom: 180px;
-
-    @include media-breakpoint-down(sm) {
-        margin-bottom: 82px;
-    }
+    margin-bottom: 80px;
 
     &__info {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        margin: 80px 0;
+        margin-bottom: 80px;
         gap: 2%;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
-            margin: 80px 0 50px;
+            margin-bottom: 50px;
         }
 
         > div {
             display: flex;
             align-items: center;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 flex-direction: column;
                 align-items: flex-start;
             }
@@ -606,7 +711,7 @@
             font-weight: $font-weight--regular;
             padding: 0 34px;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 padding: 0px;
                 margin-bottom: 8px;
                 @include font-size($font-small);
@@ -619,7 +724,7 @@
             color: $light-black;
             margin-bottom: 0;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 @include font-size($font-big);
                 line-height: 28px;
             }
@@ -749,6 +854,7 @@
 
     &__investment {
         margin-bottom: 24px;
+        width: 100%;
 
         p {
             margin-bottom: 0;
@@ -764,7 +870,7 @@
         }
 
         h5 {
-            @include font-size($font-xxx-big);
+            @include font-size($font-xx-big);
             font-weight: $font-weight--semibold;
             color: $light-black;
             margin: 12px 0;

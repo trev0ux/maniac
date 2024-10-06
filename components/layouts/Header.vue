@@ -3,32 +3,24 @@
     <div class="container-fluid">
       <NuxtLink to="/" class="navbar__logo">
         <Icon name="LogoIcon"></Icon>
-        maniac.
       </NuxtLink>
-      <button class="navbar__burger-btn d-block d-lg-none" @click="toggleMenu">
-        <Icon name="BurgerIcon"></Icon>
+      <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"
+        :class="(isMobileMenuOpen ? 'navbar__burger-btn--open' : '')">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <nav
-        :class="{ 'navbar__menu--active': showMenu }"
-        class="d-none d-lg-block navbar__menu"
-        ref="menu"
-      >
+      <nav :class="{ 'navbar__menu--active': isMobileMenuOpen }" class="d-none d-lg-block navbar__menu" ref="menu">
         <div>
-          <button
-            class="navbar__close-btn d-block d-lg-none"
-            @click="toggleMenu"
-          >
-            <Icon name="CloseIcon"></Icon>
-          </button>
           <ul>
             <li>
-              <NuxtLink>Projetos</NuxtLink>
+              <NuxtLink to="#projetos" @click="toggleMobileMenu">Projetos</NuxtLink>
             </li>
             <li>
-              <NuxtLink>Serviços</NuxtLink>
+              <NuxtLink to="#servicos" @click="toggleMobileMenu">Serviços</NuxtLink>
             </li>
             <li>
-              <NuxtLink>Preços</NuxtLink>
+              <NuxtLink to="#precos" @click="toggleMobileMenu">Preços</NuxtLink>
             </li>
             <li>
               <NuxtLink class="btn navbar__budget">
@@ -61,13 +53,17 @@ export default {
 
     const handleScroll = () => {
       scrollY.value = window.scrollY;
-
-      console.log(scrollY.value);
       if (scrollY.value > 85) {
         isShrink.value = true;
       } else {
         isShrink.value = false;
       }
+    };
+
+    const isMobileMenuOpen = ref(false);
+
+    const toggleMobileMenu = () => {
+      isMobileMenuOpen.value = !isMobileMenuOpen.value;
     };
 
     onMounted(() => {
@@ -80,17 +76,9 @@ export default {
 
     return {
       isShrink,
+      toggleMobileMenu,
+      isMobileMenuOpen
     };
-  },
-  methods: {
-    handleScroll() {
-      let scroll = window.scrollY;
-
-      console.log(scroll);
-    },
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
-    },
   },
 };
 </script>
