@@ -11,7 +11,7 @@
         </div>
         <article class="row">
             <div class="services__image">
-                <NuxtImg src="/whatsapp-api.png" alt="Team" />
+                <NuxtImg src="/computer.png" alt="Team" />
             </div>
             <div>
                 <div class="services__subtitle">
