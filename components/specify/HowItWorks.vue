@@ -1,7 +1,9 @@
 <template>
     <section class="how-work container-fluid">
         <div class="how-work__header">
-            <h2><WordAnimation content="4 etapas para construir um site do jeitinho que você precisa"/> </h2>
+            <h2>
+                <WordAnimation content="4 etapas para construir um site do jeitinho que você precisa" />
+            </h2>
             <p>Veja como nós tornamos uma ideia abstrata em resultados tangíveis</p>
         </div>
         <article>
@@ -73,22 +75,21 @@ const howWorkItems = ref([
 ])
 
 const observeElements = () => {
-  const elements = document.querySelectorAll('.how-work__item');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const itemIndex = Array.from(elements).indexOf(entry.target);
-        if (itemIndex !== -1) {
-          startAnimation(itemIndex);
-          setTimeout(()=> {
-            reverseAnimation(itemIndex)
-          }, 3000)
-        }
-      }
+    const elements = document.querySelectorAll('.how-work__item');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const itemIndex = Array.from(elements).indexOf(entry.target);
+                if (itemIndex !== -1) {
+                    startAnimation(itemIndex);
+                } else {
+                    reverseAnimation(itemIndex)
+                }
+            }
+        });
     });
-  });
 
-  elements.forEach((el) => observer.observe(el));
+    elements.forEach((el) => observer.observe(el));
 };
 
 function startAnimation(itemIndex) {
@@ -104,7 +105,7 @@ function animateCascade(itemIndex, revealing) {
     cancelAnimationFrame(item.animationFrame);
 
     const totalSteps = 50;
-    const duration = 850; // Total animation duration in ms
+    const duration = 1350; // Total animation duration in ms
     const startTime = performance.now();
 
     const animate = (currentTime) => {
@@ -149,8 +150,8 @@ function animateCascade(itemIndex, revealing) {
 }
 
 onMounted(async () => {
-  await nextTick();
-  observeElements();
+    await nextTick();
+    observeElements();
 });
 
 </script>

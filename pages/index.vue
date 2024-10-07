@@ -11,9 +11,7 @@
     <AnimateSection>
       <Services />
     </AnimateSection>
-    <AnimateSection>
       <Plans />
-    </AnimateSection>
   </div>
 </template>
 

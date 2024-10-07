@@ -4,12 +4,17 @@
       <NuxtLink to="/" class="navbar__logo">
         <Icon name="LogoIcon"></Icon>
       </NuxtLink>
-      <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"
-        :class="(isMobileMenuOpen ? 'navbar__burger-btn--open' : '')">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="d-flex gap-2 align-items-center">
+        <NuxtLink class="btn navbar__budget-mobile d-lg-none">
+          Pedir um orçamento
+        </NuxtLink>
+        <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"
+          :class="(isMobileMenuOpen ? 'navbar__burger-btn--open' : '')">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <nav :class="{ 'navbar__menu--active': isMobileMenuOpen }" class="d-none d-lg-block navbar__menu" ref="menu">
         <div>
           <ul>

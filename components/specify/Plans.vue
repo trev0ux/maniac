@@ -4,7 +4,8 @@
             <div>
                 <span>03</span>
                 <h3>
-                    <WordAnimation content="Preços claros, sua combinação perfeita - Estamos dispostos a te ajudar a conquistar seu espaço na internet"/>
+                    <WordAnimation
+                        content="Preços claros, sua combinação perfeita - Estamos dispostos a te ajudar a conquistar seu espaço na internet" />
                 </h3>
             </div>
             <h4>(Nossos planos)</h4>
@@ -22,6 +23,15 @@
                         <h5>R$800 - R$3,000</h5>
                         <p>dependendo da complexidade e das necessidades específicas</p>
                     </div>
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" to="#precos">
+                        Agende uma call de 15min
+                        <div class="arrows-block">
+                            <div class="arrows-icon">
+                                <Icon name="ArrowIcon"></Icon>
+                                <Icon name="ArrowIcon"></Icon>
+                            </div>
+                        </div>
+                    </NuxtLink>
                 </div>
                 <div>
                     <ul>
@@ -69,6 +79,15 @@
                         <h5>R$2,000 - R$5,000+</h5>
                         <p>dependendo da complexidade e das necessidades específicas</p>
                     </div>
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" to="#precos">
+                        Agende uma call de 15min
+                        <div class="arrows-block">
+                            <div class="arrows-icon">
+                                <Icon name="ArrowIcon"></Icon>
+                                <Icon name="ArrowIcon"></Icon>
+                            </div>
+                        </div>
+                    </NuxtLink>
                 </div>
                 <div>
                     <ul>
@@ -116,6 +135,15 @@
                         <h5>R$4,500 - R$10,000+</h5>
                         <p>dependendo da complexidade e das necessidades específicas</p>
                     </div>
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" to="#precos">
+                        Agende uma call de 15min
+                        <div class="arrows-block">
+                            <div class="arrows-icon">
+                                <Icon name="ArrowIcon"></Icon>
+                                <Icon name="ArrowIcon"></Icon>
+                            </div>
+                        </div>
+                    </NuxtLink>
                 </div>
                 <div>
                     <ul>
@@ -163,6 +191,15 @@
                         <h5>R$300 - R$600+</h5>
                         <p>dependendo da complexidade e das necessidades específicas</p>
                     </div>
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" to="#precos">
+                        Agende uma call de 15min
+                        <div class="arrows-block">
+                            <div class="arrows-icon">
+                                <Icon name="ArrowIcon"></Icon>
+                                <Icon name="ArrowIcon"></Icon>
+                            </div>
+                        </div>
+                    </NuxtLink>
                 </div>
                 <div>
                     <ul>
