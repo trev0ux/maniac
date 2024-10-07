@@ -205,7 +205,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        padding: 8px 24px 8px 12px !important;
+        padding: 6px 24px 6px 12px !important;
         @include font-size($font-x-small);
 
         &:after {

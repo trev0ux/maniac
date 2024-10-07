@@ -4,7 +4,7 @@
       <NuxtLink to="/" class="navbar__logo">
         <Icon name="LogoIcon"></Icon>
       </NuxtLink>
-      <div class="d-flex gap-2 align-items-center">
+      <div class="d-flex gap-3 align-items-center">
         <NuxtLink class="btn navbar__budget-mobile d-lg-none">
           Pedir um orçamento
         </NuxtLink>
