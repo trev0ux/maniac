@@ -5,13 +5,15 @@
       <HeroBanner />
       <HowItWorks />
     </div>
-    <AnimateSection>
+    <AnimateSection :fade-in-start="0.1" :fade-in-end="0.2">
       <Projects />
     </AnimateSection>
-    <AnimateSection>
+    <AnimateSection :fade-in-start="0.1" :fade-in-end="0.2">
       <Services />
     </AnimateSection>
+    <AnimateSection :fade-in-start="0.1" :fade-in-end="0.2">
       <Plans />
+    </AnimateSection>
   </div>
 </template>
 
