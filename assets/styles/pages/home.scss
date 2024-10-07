@@ -85,24 +85,28 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: 
-        radial-gradient(circle, rgba(0, 0, 0, 0.3), transparent 70%),
-        linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), transparent 70%),
+            linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
         opacity: 0.5;
         z-index: -1;
 
         --min-width: 80%;
         --max-width: 100%;
         --animation-duration: 2s;
-      
+
         animation: pulse-width var(--animation-duration) ease-in-out infinite;
     }
 
     @keyframes pulse-width {
-        0%, 100% { width: var(--min-width); }
-        50% { width: var(--max-width); }
-      }
+        0%,
+        100% {
+            width: var(--min-width);
+        }
+        50% {
+            width: var(--max-width);
+        }
+    }
 
     &__grid {
         display: flex;
@@ -277,7 +281,6 @@
                 bottom: 10px;
                 height: 225px;
                 z-index: 1;
-
             }
         }
 
@@ -316,7 +319,6 @@
 
 .projects {
     margin-bottom: 0px;
-
 
     &__info {
         display: flex;
@@ -403,6 +405,10 @@
 
             img {
                 width: 80%;
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
             }
 
             > div {
@@ -520,11 +526,10 @@
     }
 
     &__progress-bar {
-
         @include media-breakpoint-down(sm) {
             margin-bottom: 4px;
         }
-        
+
         &--active {
             h3 {
                 color: $primary !important;
@@ -832,7 +837,6 @@
                 border-top: 1px solid $card-border;
                 height: 100%;
                 border: 4px solid $white;
-
 
                 ul {
                     margin: 0;
