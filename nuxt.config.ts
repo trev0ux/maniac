@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   
         { hid: 'og:title', property: 'og:title', content: 'maniac - Agência de Web Design, E-commerce e Branding' },
         { hid: 'og:description', property: 'og:description', content: 'Somos uma agência digital brasileira que oferece serviços de desenvolvimento de sites, e-commerce e branding para negócios que buscam presença online de destaque.' },
-        { hid: 'og:image', property: 'og:image', content: '/path-to-your-image.jpg' },
+        { hid: 'og:image', property: 'og:image', content: '/favicon-48x48.png' },
         { hid: 'og:url', property: 'og:url', content: 'https://www.maniac.com.br' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
   

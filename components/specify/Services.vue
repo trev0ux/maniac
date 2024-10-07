@@ -55,9 +55,9 @@ const interval = ref(null)
 
 const services = ref([
     {
-        title: "Design de websites",
+        title: "Design de interfaces",
         content:
-            "Criamos sites únicos que capturam olhares, engajam usuários e deixam uma impressão duradoura. Nosso design premium garante que sua marca se destaque no mundo digital.",
+            "Criamos interfaces únicas que capturam olhares, engajam usuários e deixam uma impressão duradoura. Garantindo que sua marca se destaque no mundo digital.",
     },
     {
         title: "Desenvolvimento de websites",
