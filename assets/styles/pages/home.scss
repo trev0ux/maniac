@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 940px;
-    margin: 200px auto 0px;
+    margin: 120px auto 0px;
     position: relative;
 
     @include media-breakpoint-down(sm) {
@@ -69,6 +69,74 @@
         @include media-breakpoint-down(sm) {
             @include font-size($font-small);
             padding: 0;
+        }
+    }
+
+    &__images {
+        display: flex;
+        gap: 15px;
+
+        > div {
+            &:nth-child(1) {
+                animation: changeWidth30to50 8s forwards;
+                width: 70%;
+            }
+
+            &:nth-child(2) {
+                animation: changeWidth70to50 8s forwards;
+                width: 30%;
+            }
+        }
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+            transition: width 2s ease-in-out;
+            object-fit: cover;
+            height: 620px;
+
+            @include media-breakpoint-down(sm) {
+                height: 260px;
+                border-radius: 10px;
+            }
+        }
+
+        @keyframes changeWidth70to50 {
+            0%, 22.22%, 44.44% {
+              width: 70%;
+            }
+            11.11%, 33.33% {
+              width: 30%;
+            }
+            100% {
+              width: 50%;
+            }
+          }
+          
+          @keyframes changeWidth30to50 {
+            0%, 22.22%, 44.44% {
+              width: 30%;
+            }
+            11.11%, 33.33% {
+              width: 70%;
+            }
+            100% {
+              width: 50%;
+            }
+          }
+    }
+
+    &__image-project {
+        img {
+            width: 100%;
+            height: 620px;
+            object-fit: cover;
+            border-radius: 20px;
+
+            @include media-breakpoint-down(sm) {
+                height: 260px;
+                border-radius: 10px;
+            }
         }
     }
 
@@ -131,6 +199,7 @@
         }
     }
 }
+
 
 .how-work {
     padding: 60px 0 80px;

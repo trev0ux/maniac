@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
   plugins: [
-    '@/plugins/lenis.client.ts'
+    '@/plugins/lenis.client.ts',
+    '@/plugins/swiper.js'
   ]
 })

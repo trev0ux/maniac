@@ -1,31 +1,62 @@
 <template>
-    <section class="banner container">
-        <h1>
-            <WordAnimation content="Transformamos marcas no digital com criatividade dirigida a resultados."/>   
-        </h1>
-        <p>
-            Criamos sites e experiências digitais que convertem visitantes em
-            clientes fiéis e impulsionam o crescimento do seu negócio!
-        </p>
-        <NuxtLink class="btn btn-primary" to="#precos">
-            Conheça nossos preços
-            <div class="arrows-block">
-                <div class="arrows-icon">
-                    <Icon name="ArrowIcon"></Icon>
-                    <Icon name="ArrowIcon"></Icon>
+    <section>
+        <div class="banner container">
+            <h1>
+                <WordAnimation content="Transformamos marcas no digital com criatividade dirigida a resultados." />
+            </h1>
+            <p>
+                Criamos sites e experiências digitais que convertem visitantes em
+                clientes fiéis e impulsionam o crescimento do seu negócio!
+            </p>
+            <NuxtLink class="btn btn-primary" to="#precos">
+                Conheça nossos preços
+                <div class="arrows-block">
+                    <div class="arrows-icon">
+                        <Icon name="ArrowIcon"></Icon>
+                        <Icon name="ArrowIcon"></Icon>
+                    </div>
                 </div>
-            </div>
-        </NuxtLink>
-        <div class="banner__grid-block">
-            <div class="banner__grid-background" ref="gridBackground"></div>
-            <div class="banner__grid">
-                <div v-for="(grid, index) in 14" :key="index">
-                </div>
+            </NuxtLink>
+            <div class="banner__roll">
+                <p></p>
             </div>
         </div>
     </section>
+    <DigitalMarketingBanner />
+    <swiper :slides-per-view="1" :space-between="50">
+        <swiper-slide>
+            <article class="banner__images container-fluid mt-5">
+                <div>
+                    <NuxtImg ref="image1" src="/image-project.png" />
+                </div>
+                <div>
+                    <NuxtImg ref="image2" src="/image-project.png" />
+                </div>
+            </article>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="container-fluid banner__image-project mt-5">
+                <NuxtImg src="/zap-project.png" />
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="container-fluid banner__image-project mt-5">
+                <NuxtImg src="/zap-project.png" />
+            </div>
+        </swiper-slide>
+    </swiper>
 </template>
 
 <script setup>
+import DigitalMarketingBanner from "./DigitalMarketingBanner.vue"
 import WordAnimation from "./WordAnimation.vue"
+import { Swiper, SwiperSlide } from "swiper/vue";
+import 'swiper/css'
+
+
+defineComponent({
+    Swiper,
+    SwiperSlide
+})
+
 </script>
