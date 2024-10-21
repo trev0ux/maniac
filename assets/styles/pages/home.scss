@@ -75,6 +75,9 @@
     &__images {
         display: flex;
         gap: 15px;
+        @include media-breakpoint-down(sm) {
+            gap: 4px;
+        }
 
         > div {
             &:nth-child(1) {
@@ -95,9 +98,14 @@
             object-fit: cover;
             height: 620px;
 
+            @include media-breakpoint-down(lg) {
+                height: 360px;
+                border-radius: 8px;
+            }
+
             @include media-breakpoint-down(sm) {
                 height: 260px;
-                border-radius: 10px;
+                border-radius: 8px;
             }
         }
 

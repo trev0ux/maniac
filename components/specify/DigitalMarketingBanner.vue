@@ -35,11 +35,6 @@ export default {
     const animate = () => {
       position.value -= 1
       
-      // Reset position when the first set of terms has moved out of view
-      if (-position.value >= container.value.offsetWidth) {
-        position.value += container.value.offsetWidth / 3
-      }
-      
       animationId = requestAnimationFrame(animate)
     }
 
@@ -62,15 +57,25 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "~/assets/styles/_base/typography";
+@import "~/assets/styles/_base/variables";
+@import "bootstrap/scss/_functions";
+@import "bootstrap/scss/_variables";
+@import "bootstrap/scss/mixins/_breakpoints";
+
 .banner-container {
   width: 100%;
   overflow: hidden;
-  background: white;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  background: $white;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
   padding: 1rem 0;
   margin-top: 30px;
+
+  @include media-breakpoint-down(md) {
+    padding: 8px 0;
+  }
 }
 
 .banner-content {
@@ -80,23 +85,19 @@ export default {
 
 .term {
   display: inline-block;
-  color: black;
+  color: $primary;
   font-size: 1rem;
+  @include font-size($font-regular);
   font-weight: 400;
+
+  @include media-breakpoint-down(md) {
+    @include font-size($font-small);
+  }
 }
 
 .middle-dot {
   display: inline-block;
   font-weight: bold;
   margin: 0 .5rem;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
 }
 </style>

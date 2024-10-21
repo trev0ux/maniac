@@ -23,7 +23,8 @@
         </div>
     </section>
     <DigitalMarketingBanner />
-    <swiper :slides-per-view="1" :space-between="50">
+    <swiper :slides-per-view="1" :space-between="50" loop :autoplay="{ delay: 6000 }"
+        :modules="modules">
         <swiper-slide>
             <article class="banner__images container-fluid mt-5">
                 <div>
@@ -52,11 +53,16 @@ import DigitalMarketingBanner from "./DigitalMarketingBanner.vue"
 import WordAnimation from "./WordAnimation.vue"
 import { Swiper, SwiperSlide } from "swiper/vue";
 import 'swiper/css'
-
+import {
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 
 defineComponent({
     Swiper,
     SwiperSlide
 })
+
+const modules = [Autoplay, A11y];
 
 </script>
