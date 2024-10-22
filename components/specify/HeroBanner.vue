@@ -2,11 +2,10 @@
     <section>
         <div class="banner container">
             <h1>
-                <WordAnimation content="Transformamos marcas no digital com criatividade dirigida a resultados." />
+                <WordAnimation content="Sites que não só resolvem problemas: criam novas oportunidades de vendas" />
             </h1>
             <p>
-                Criamos sites e experiências digitais que convertem visitantes em
-                clientes fiéis e impulsionam o crescimento do seu negócio!
+                Fazemos sites que são fora da curva e que trabalham 24/7 para expandir seu negócio com resultados mensuráveis!
             </p>
             <NuxtLink class="btn btn-primary" to="#precos">
                 Conheça nossos preços
