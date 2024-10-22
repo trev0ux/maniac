@@ -19,7 +19,7 @@ export default {
     let animationId = null
     let contentWidth = 0
     let singleSetWidth = 0
-    const SPEED = 1.5
+    const SPEED = 1
 
     const marketingTerms = [
       'E-commerce',

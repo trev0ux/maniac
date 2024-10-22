@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: [{ src: '~/assets/styles/globals.scss', lang: 'sass' }],
+  css: [{ src: '~/assets/styles/globals.scss', lang: 'sass' }, { src: '~/assets/styles/fonts.scss', lang: 'scss' }],
   app: {
     head: {
       title: "Maniac - Agência de Web Design, E-commerce e Branding",
@@ -30,10 +30,43 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: [
-    'nuxt-icon',
-    '@nuxt/image',
-  ],
+  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts"],
+  fonts: {
+    families: [
+      {
+        name: 'Satoshi',
+        local: 'Satoshi',
+        variants: [
+          {
+            src: '/fonts/Satoshi-Light.otf',
+            weight: 300,
+            style: 'normal'
+          },
+          {
+            src: '/fonts/Satoshi-Regular.otf',
+            weight: 400,
+            style: 'normal'
+          },
+          {
+            src: '/fonts/Satoshi-Medium.otf',
+            weight: 500,
+            style: 'normal'
+          },
+          {
+            src: '/fonts/Satoshi-Bold.otf',
+            weight: 700,
+            style: 'normal'
+          },
+          {
+            src: '/fonts/Satoshi-Black.otf',
+            weight: 900,
+            style: 'normal'
+          }
+        ],
+        display: 'swap',
+      }
+    ]
+  },
   plugins: [
     '@/plugins/lenis.client.ts',
     '@/plugins/swiper.js'
