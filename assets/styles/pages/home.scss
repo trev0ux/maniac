@@ -247,10 +247,10 @@
         p {
             @include font-size($font-big);
             font-weight: $font-weight--medium;
-            color: #a9a9a9;
+            color: $dum-grey;
             padding: 13px 34px;
             border-radius: 100px;
-            border: 1px solid #e3e3e3;
+            border: 1px solid $dum-grey;
             background-color: $white;
             text-align: center;
 
@@ -588,6 +588,7 @@
             @include font-size($font-big);
             position: relative;
             display: flex;
+            color: $light-black;
             align-items: center;
             font-weight: $font-weight--light;
 
@@ -609,13 +610,13 @@
 
         &--active {
             h3 {
-                color: $primary !important;
+                color: $light-black !important;
             }
         }
         h3 {
             position: relative;
             @include font-size($font-x-large);
-            color: rgba($primary, 0.1);
+            color: rgba($light-black, 0.4);
 
             font-weight: $font-weight--semibold;
             padding-bottom: 16px;

@@ -23,7 +23,7 @@
         </div>
     </section>
     <DigitalMarketingBanner />
-    <swiper :slides-per-view="1" :space-between="50" loop :autoplay="{ delay: 6000 }"
+    <swiper :slides-per-view="1" :space-between="50" loop :autoplay="{ delay: 3000 }"
         :modules="modules">
         <swiper-slide>
             <article class="banner__images container-fluid mt-5">

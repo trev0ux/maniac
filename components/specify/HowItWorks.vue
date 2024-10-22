@@ -1,5 +1,5 @@
 <template>
-    <section class="how-work container-fluid">
+    <section class="how-work container-fluid" id="comoFunciona">
         <div class="how-work__header">
             <h2>
                 <WordAnimation content="4 etapas para construir um site do jeitinho que você precisa" />

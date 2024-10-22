@@ -46,7 +46,8 @@
         }
 
         svg {
-            width: 104px;
+            width: 94px;
+            height: 38px;
 
             @include media-breakpoint-down(md) {
                 width: 84px;

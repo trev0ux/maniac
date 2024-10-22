@@ -1,4 +1,3 @@
-// DigitalMarketingBanner.vue
 <template>
   <div class="banner-container" ref="container">
     <div class="banner-content" :style="{ transform: `translateX(${position}px)` }">
@@ -18,10 +17,13 @@ export default {
     const position = ref(0)
     const container = ref(null)
     let animationId = null
+    let contentWidth = 0
+    let singleSetWidth = 0
+    const SPEED = 1.5
 
     const marketingTerms = [
       'E-commerce',
-      'UX Design',
+      'UX Design', 
       'Web Design',
       'Landing Pages',
       'Site Institucional',
@@ -30,16 +32,31 @@ export default {
       'Design Gráfico'
     ]
 
-    const displayedTerms = computed(() => [...marketingTerms, ...marketingTerms, ...marketingTerms, ...marketingTerms, ...marketingTerms, ...marketingTerms])
+    // Create three sets for smoother looping
+    const displayedTerms = computed(() => [...marketingTerms, ...marketingTerms, ...marketingTerms])
 
     const animate = () => {
-      position.value -= 1
+      position.value -= SPEED
+      
+      // Reset position when first set has scrolled past
+      if (-position.value >= singleSetWidth) {
+        position.value = 0
+      }
       
       animationId = requestAnimationFrame(animate)
     }
 
     onMounted(() => {
-      animationId = requestAnimationFrame(animate)
+      const contentEl = container.value?.querySelector('.banner-content')
+      if (contentEl) {
+        contentWidth = contentEl.offsetWidth
+        // Calculate the width of one set of terms (total width / 3 since we have 3 sets)
+        singleSetWidth = contentWidth / 3
+        
+        // Start the animation from 0
+        position.value = 0
+        animate()
+      }
     })
 
     onUnmounted(() => {
@@ -68,8 +85,8 @@ export default {
   width: 100%;
   overflow: hidden;
   background: $white;
-  border-top: 1px solid $primary;
-  border-bottom: 1px solid $primary;
+  border-top: 1px solid $light-black;
+  border-bottom: 1px solid $light-black;
   padding: 1rem 0;
   margin-top: 30px;
 
@@ -81,11 +98,12 @@ export default {
 .banner-content {
   display: inline-block;
   white-space: nowrap;
+  will-change: transform; // Optimize performance
 }
 
 .term {
   display: inline-block;
-  color: $primary;
+  color: $light-black;
   font-size: 1rem;
   @include font-size($font-regular);
   font-weight: 400;
