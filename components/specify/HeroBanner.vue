@@ -5,7 +5,7 @@
                 <WordAnimation content="Sites que não só resolvem problemas: criam novas oportunidades de vendas" />
             </h1>
             <p>
-                Fazemos sites que são fora da curva e que trabalham 24/7 para expandir seu negócio com resultados mensuráveis!
+                Fazemos sites fora da curva e que trabalham 24/7 para expandir seu negócio com resultados mensuráveis!
             </p>
             <NuxtLink class="btn btn-primary" to="#precos">
                 Conheça nossos preços
