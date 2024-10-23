@@ -97,7 +97,7 @@ function animateCascade(itemIndex, revealing) {
     cancelAnimationFrame(item.animationFrame);
 
     const totalSteps = 50;
-    const duration = 350; // Total animation duration in ms
+    const duration = 650; // Total animation duration in ms
     const startTime = performance.now();
 
     const animate = (currentTime) => {
@@ -177,7 +177,7 @@ onMounted(async () => {
         timeline
             .to(".how-work__item--1", {
                 ease: "none",
-                y: -cardHeight * 0.2, // Moves up by 80% of card height
+                y: -cardHeight * 0, // Moves up by 80% of card height
                 duration: 2,
                 onStart: () => {
                     startAnimation(0);
@@ -188,7 +188,7 @@ onMounted(async () => {
             })
             .to(".how-work__item--2", {
                 ease: "none",
-                y: -cardHeight * 1.21, // Moves up by 190% of card height
+                y: -cardHeight * 1, // Moves up by 190% of card height
                 duration: 4.5,
                 onStart: () => {
                     startAnimation(1);
@@ -199,7 +199,7 @@ onMounted(async () => {
             }, "<") // Starts at the same time as the previous animation
             .to(".how-work__item--3", {
                 ease: "none",
-                y: -cardHeight * 2.28, // Moves up by 304% of card height
+                y: -cardHeight * 2, // Moves up by 304% of card height
                 duration: 6.5,
                 onStart: () => {
                     startAnimation(2);
@@ -210,7 +210,7 @@ onMounted(async () => {
             }, "<") // Starts at the same time as the previous animation
             .to(".how-work__item--4", {
                 ease: "none",
-                y: -cardHeight * 3.25, // Moves up by 400% of card height
+                y: -cardHeight * 3, // Moves up by 400% of card height
                 duration: 8.5,
                 onStart: () => {
                     startAnimation(3);
