@@ -97,7 +97,7 @@ function animateCascade(itemIndex, revealing) {
     cancelAnimationFrame(item.animationFrame);
 
     const totalSteps = 50;
-    const duration = 850; // Total animation duration in ms
+    const duration = 350; // Total animation duration in ms
     const startTime = performance.now();
 
     const animate = (currentTime) => {
