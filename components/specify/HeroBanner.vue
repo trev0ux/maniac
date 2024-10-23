@@ -2,10 +2,10 @@
     <section>
         <div class="banner container">
             <h1>
-                <WordAnimation content="Sites que não só resolvem problemas: criam novas oportunidades de vendas" />
+                <WordAnimation content="Sites que não só resolvem problemas: impressionam seu cliente e te fazem vender mais." />
             </h1>
             <p>
-                Desenvolvemos sites fora da curva que trabalham 24/7 para expandir seu negócio com resultados mensuráveis!
+                Desenvolvemos sites fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!
             </p>
             <NuxtLink class="btn btn-primary" to="#precos">
                 Conheça nossos preços

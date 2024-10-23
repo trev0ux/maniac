@@ -4,6 +4,12 @@
 @import "bootstrap/scss/_variables";
 @import "bootstrap/scss/mixins/_breakpoints";
 
+@mixin smooth-performance {
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
 .homepage {
     position: relative;
     display: flex;
@@ -110,28 +116,34 @@
         }
 
         @keyframes changeWidth70to50 {
-            0%, 22.22%, 44.44% {
-              width: 70%;
+            0%,
+            22.22%,
+            44.44% {
+                width: 70%;
             }
-            11.11%, 33.33% {
-              width: 30%;
-            }
-            100% {
-              width: 50%;
-            }
-          }
-          
-          @keyframes changeWidth30to50 {
-            0%, 22.22%, 44.44% {
-              width: 30%;
-            }
-            11.11%, 33.33% {
-              width: 70%;
+            11.11%,
+            33.33% {
+                width: 30%;
             }
             100% {
-              width: 50%;
+                width: 50%;
             }
-          }
+        }
+
+        @keyframes changeWidth30to50 {
+            0%,
+            22.22%,
+            44.44% {
+                width: 30%;
+            }
+            11.11%,
+            33.33% {
+                width: 70%;
+            }
+            100% {
+                width: 50%;
+            }
+        }
     }
 
     &__image-project {
@@ -208,11 +220,16 @@
     }
 }
 
+.spacing {
+    height: 80vh;
+}
 
 .how-work {
     padding: 60px 0 80px;
     background: url("/background-points.png");
     background-size: contain;
+    position: relative;
+    width: 100%;
 
     @include media-breakpoint-down(md) {
         background-size: 1000px 1000px;
@@ -260,10 +277,18 @@
         }
     }
 
-    article {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
+    &__section {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        width: 100%;
+        display: grid;
+
+        > * {
+            grid-row: 1 / 1 / 2 / 2;
+        }
     }
 
     &__animation-block {
@@ -286,6 +311,7 @@
         flex: 0 0 calc(25% - 24px);
         position: relative;
         box-shadow: 0 20px 25px rgba($black-grey, 0.06);
+        @include smooth-performance;
 
         > img {
             z-index: 1;
@@ -297,6 +323,23 @@
 
         @include media-breakpoint-down(sm) {
             flex: 0 0 100%;
+        }
+
+        &--1 {
+            z-index: 1;
+            margin-top: 4rem;
+        }
+
+        &--2 {
+            z-index: 2;
+        }
+
+        &--3 {
+            z-index: 3;
+        }
+
+        &--4 {
+            z-index: 4;
         }
 
         &--change-color {

@@ -19,7 +19,7 @@ export default defineNuxtConfig({
         { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
   
         { hid: 'robots', name: 'robots', content: 'index, follow' },
-        { hid: 'canonical', rel: 'canonical', href: 'https://www.maniac.com.br' },
+        { hid: 'canonical', rel: 'canonical', href: 'https://www.maniacagency.digital' },
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon-48x48.png', sizes: '48x48' },
@@ -59,7 +59,7 @@ export default defineNuxtConfig({
           },
           {
             src: '/fonts/Satoshi-Black.otf',
-            weight: 900,
+            weight: 800,
             style: 'normal'
           }
         ],
@@ -67,8 +67,12 @@ export default defineNuxtConfig({
       }
     ]
   },
+  build: {
+    transpile: ['gsap']
+  },
   plugins: [
     '@/plugins/lenis.client.ts',
+    '@/plugins/gsap.client.ts',
     '@/plugins/swiper.js'
   ]
 })
