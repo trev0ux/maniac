@@ -2,9 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [{ src: '~/assets/styles/globals.scss', lang: 'sass' }, { src: '~/assets/styles/fonts.scss', lang: 'scss' }],
+  target: 'static',
+  site: {
+    url: 'https://agenciamaniac.digital',
+    name: 'Maniac'
+  },
   app: {
     head: {
-      title: "Maniac - Agência de Web Design, E-commerce e Branding",
+      title: "Maniac - Criação de Sites, E-commerce e Branding",
       meta: [
         { hid: 'description', name: 'description', content: 'A maniac é uma agência digital especializada em desenvolvimento de sites, e-commerces e branding. Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
         { hid: 'keywords', name: 'keywords', content: 'maniac, agência maniac, agencia maniac, web design, desenvolvimento de sites, e-commerce, branding, agência digital, Brasil, design de marca, criação de logo, soluções digitais' },
@@ -30,7 +35,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts"],
+  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts", '@nuxtjs/sitemap'],
   fonts: {
     families: [
       {
