@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         { hid: 'canonical', rel: 'canonical', href: 'https://www.maniacagency.digital' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '48x48' },
+        { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32' },
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'shortcut icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },

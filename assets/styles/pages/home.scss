@@ -26,9 +26,19 @@
         position: fixed;
         right: 30px;
         bottom: 80px;
+        z-index: 10;
         width: 64px;
         height: 64px;
-        z-index: 10;
+        
+        img {
+            width: 64px;
+            height: 64px;
+
+            @include media-breakpoint-down(sm) {
+                width: 48px;
+                height: 48px;
+            }
+        }
 
         @include media-breakpoint-down(sm) {
             bottom: 24px;
