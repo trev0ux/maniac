@@ -12,13 +12,13 @@ export default defineNuxtConfig({
       title: "Maniac - Criação de Sites, E-commerce e Branding",
       meta: [
         { hid: 'description', name: 'description', content: 'A maniac é uma agência digital especializada em desenvolvimento de sites, e-commerces e branding. Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
-        { hid: 'keywords', name: 'keywords', content: 'maniac, agência maniac, agencia maniac, web design, desenvolvimento de sites, e-commerce, branding, agência digital, Brasil, design de marca, criação de logo, soluções digitais' },
+        { hid: 'keywords', name: 'keywords', content: 'maniac, agência maniac, agencia maniac, web design, desenvolvimento de sites, e-commerce, branding, criação de site, agência digital, Brasil, design de marca, criação de logo, soluções digitais' },
         { hid: 'author', name: 'author', content: 'maniac - Agência Digital' },
   
         { hid: 'og:title', property: 'og:title', content: 'Maniac - Agência de Web Design, E-commerce e Branding' },
         { hid: 'og:description', property: 'og:description', content: 'Somos uma agência digital brasileira que oferece serviços de desenvolvimento de sites, e-commerce e branding para negócios que buscam presença online de destaque.' },
-        { hid: 'og:image', property: 'og:image', content: '/favicon-48x48.png' },
-        { hid: 'og:url', property: 'og:url', content: 'https://www.maniac.com.br' },
+        { hid: 'og:image', property: 'og:image', content: '/favicon-32x32.png' },
+        { hid: 'og:url', property: 'og:url', content: 'https://www.agenciamaniac.digital' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
   
         { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         { hid: 'canonical', rel: 'canonical', href: 'https://www.maniacagency.digital' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon-48x48.png', sizes: '48x48' },
+        { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '48x48' },
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'shortcut icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
