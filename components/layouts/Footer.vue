@@ -3,8 +3,8 @@
   <footer class="footer container-fluid">
     <article>
       <div>
-        <h4>contato@maniac.com</h4>
-        <h4>(71) 99999-9999</h4>
+        <h4>maniac@agenciamaniac.com</h4>
+        <h4>(71) 99271-5102</h4>
         <h4>Salvador, Bahia</h4>
       </div>
       <div>
@@ -16,7 +16,7 @@
         <ul>
             <li><h6>Redes Sociais</h6></li>
             <li>LinkedIn</li>
-            <li>Instagram</li>
+            <li><NuxtLink to="">Instagram</NuxtLink></li>
         </ul>
       </div>
     </article>
