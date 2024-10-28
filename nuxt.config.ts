@@ -35,7 +35,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts", '@nuxtjs/sitemap'],
+  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts", '@nuxtjs/sitemap', '@nuxtjs/robots'],
   fonts: {
     families: [
       {
