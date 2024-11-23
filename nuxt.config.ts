@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     head: {
       title: "Maniac - Criação de Sites, E-commerce e Branding",
       meta: [
-        { hid: 'description', name: 'description', content: 'A maniac é uma agência digital especializada em desenvolvimento de sites, e-commerces e branding. Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
+        { hid: 'description', name: 'description', content: 'A agência maniac é uma agência digital especializada em desenvolvimento de sites, e-commerces e branding. Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
         { hid: 'keywords', name: 'keywords', content: 'maniac, agência maniac, agencia maniac, web design, desenvolvimento de sites, e-commerce, branding, criação de site, agência digital, Brasil, design de marca, criação de logo, soluções digitais' },
         { hid: 'author', name: 'author', content: 'maniac - Agência Digital' },
   
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
   
         { hid: 'robots', name: 'robots', content: 'index, follow' },
-        { hid: 'canonical', rel: 'canonical', href: 'https://www.maniacagency.digital' },
+        { hid: 'canonical', rel: 'canonical', href: 'https://www.agenciamaniac.digital' },
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32' },

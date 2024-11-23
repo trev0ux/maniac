@@ -20,11 +20,11 @@
   const loading = ref(true)
   
   onMounted(() => {
-    // Listen for when all resources are loaded
     window.addEventListener('load', () => {
       setTimeout(() => {
         loading.value = false
-      }, 500) // Small delay to ensure smooth transition
+        console.log("test")
+      }, 500) 
     })
   })
   </script>
