@@ -18,11 +18,6 @@
                         Landing page de alto impacto entregue em tempo recorde. Transforme
                         visitantes em clientes com uma página que impressiona e converte!
                     </p>
-                    <div class="plans__investment">
-                        <p>Investimento estimado</p>
-                        <h5>R$800 - R$3,000</h5>
-                        <p>dependendo da complexidade e das necessidades específicas</p>
-                    </div>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
                         Agende uma call de 15min
                         <div class="arrows-block">
@@ -74,11 +69,6 @@
                         Renove sua presença online ou crie do zero - seu negócio merece
                         destaque!
                     </p>
-                    <div class="plans__investment">
-                        <p>Investimento estimado</p>
-                        <h5>R$2,000 - R$5,000+</h5>
-                        <p>dependendo da complexidade e das necessidades específicas</p>
-                    </div>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
                         Agende uma call de 15min
                         <div class="arrows-block">
@@ -130,11 +120,6 @@
                         vendas online. Do design à gestão de pedidos, criamos sua
                         plataforma de e-commerce completa!
                     </p>
-                    <div class="plans__investment">
-                        <p>Investimento estimado</p>
-                        <h5>R$4,500 - R$10,000+</h5>
-                        <p>dependendo da complexidade e das necessidades específicas</p>
-                    </div>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
                         Agende uma call de 15min
                         <div class="arrows-block">
@@ -186,11 +171,6 @@
                         logotipo às aplicações, criamos a imagem que fará seu negócio se
                         destacar!
                     </p>
-                    <div class="plans__investment">
-                        <p>Investimento estimado</p>
-                        <h5>R$300 - R$600+</h5>
-                        <p>dependendo da complexidade e das necessidades específicas</p>
-                    </div>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
                         Agende uma call de 15min
                         <div class="arrows-block">

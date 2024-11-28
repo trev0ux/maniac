@@ -146,14 +146,14 @@ let timeline
 
 onMounted(async () => {
 
-    const isDesktop = window.innerWidth > 768;
+    const isDesktop = window.innerWidth > 568;
 
     if (!isDesktop) {
         // Clear console
         console.clear()
 
         // Initialize variables after DOM is ready
-        const someOffset = 150
+        const someOffset = 650
         const cardHeight = document.querySelector('.how-work__item--1').clientHeight
 
         gsap.set('.how-work__section > *', {
@@ -178,7 +178,7 @@ onMounted(async () => {
             .to(".how-work__item--1", {
                 ease: "none",
                 y: -cardHeight * 0, // Moves up by 80% of card height
-                duration: 2,
+                duration: 4,
                 onStart: () => {
                     startAnimation(0);
                 },
@@ -189,7 +189,7 @@ onMounted(async () => {
             .to(".how-work__item--2", {
                 ease: "none",
                 y: -cardHeight * 1, // Moves up by 190% of card height
-                duration: 4.5,
+                duration: 6.5,
                 onStart: () => {
                     startAnimation(1);
                 },
@@ -200,7 +200,7 @@ onMounted(async () => {
             .to(".how-work__item--3", {
                 ease: "none",
                 y: -cardHeight * 2, // Moves up by 304% of card height
-                duration: 6.5,
+                duration: 8.5,
                 onStart: () => {
                     startAnimation(2);
                 },
@@ -211,7 +211,7 @@ onMounted(async () => {
             .to(".how-work__item--4", {
                 ease: "none",
                 y: -cardHeight * 3, // Moves up by 400% of card height
-                duration: 8.5,
+                duration: 10.5,
                 onStart: () => {
                     startAnimation(3);
                 },
