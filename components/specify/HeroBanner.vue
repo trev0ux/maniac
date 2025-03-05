@@ -7,8 +7,8 @@
             <p>
                 Desenvolvemos sites fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!
             </p>
-            <NuxtLink class="btn btn-primary" to="#precos">
-                Conheça nossos preços
+            <NuxtLink class="btn btn-primary" to="#servicos-completo">
+                Conheça nossos serviços
                 <div class="arrows-block">
                     <div class="arrows-icon">
                         <Icon name="ArrowIcon"></Icon>

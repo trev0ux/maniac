@@ -648,7 +648,7 @@
             display: inline;
 
             @include media-breakpoint-down(lg) {
-                @include font-size($font-xx-big);
+                @include font-size($font-big);
                 padding-bottom: 12px;
             }
 
