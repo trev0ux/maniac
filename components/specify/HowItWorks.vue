@@ -34,8 +34,6 @@
 
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const howWorkItems = ref([
     {
