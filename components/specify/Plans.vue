@@ -1,25 +1,25 @@
 <template>
-    <section class="plans container-fluid" id="precos">
+    <section class="plans container-fluid" id="servicos">
         <div class="plans__info">
             <div>
                 <span>03</span>
                 <h3>
                     <WordAnimation
-                        content="Preços claros, sua combinação perfeita - Estamos dispostos a te ajudar a conquistar seu espaço na internet" />
+                        content="Soluções digitais de alto impacto - Impulsionamos seu negócio com estratégias personalizadas que geram resultados" />
                 </h3>
             </div>
-            <h4>(Nossos planos)</h4>
+            <h4>(Nossos serviços)</h4>
         </div>
         <article>
             <div class="plans__item">
                 <div>
-                    <h4>Landing Page</h4>
+                    <h4>Desenvolvimento Web Completo</h4>
                     <p class="plans__details">
-                        Landing page de alto impacto entregue em tempo recorde. Transforme
-                        visitantes em clientes com uma página que impressiona e converte!
+                        Sites institucionais, e-commerces e landing pages de alta conversão. Desenvolvemos plataformas 
+                        responsivas e otimizadas que transformam visitantes em clientes e impulsionam seu negócio online.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
-                        Agende uma call de 15min
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                        Solicite uma proposta personalizada
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -32,45 +32,44 @@
                     <ul>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Rápido desenvolvimento: 1-2 semanas
+                            Sites institucionais com design exclusivo
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Design personalizado e responsivo
+                            E-commerces completos e seguros
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            CMS incluído
+                            Landing pages de alta conversão
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Formulário de captura de leads
+                            CMS intuitivo para atualizações
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Integração com ferramentas de análise
+                            Otimização para motores de busca (SEO)
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Otimização para SEO on-page
+                            Responsividade em todos os dispositivos
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            E muito mais+
+                            Integrações com sistemas de pagamento
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="plans__item">
                 <div>
-                    <h4>Site Institucional</h4>
+                    <h4>Design e UX</h4>
                     <p class="plans__details">
-                        Site personalizado completo, com tudo que você precisa e mais.
-                        Renove sua presença online ou crie do zero - seu negócio merece
-                        destaque!
+                        Identidade visual marcante e interfaces intuitivas que conectam sua marca com os usuários. 
+                        Criamos experiências digitais memoráveis que geram engajamento e fortalecem sua presença no mercado.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
-                        Agende uma call de 15min
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                        Vamos criar sua identidade
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -83,45 +82,44 @@
                     <ul>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Design de site exclusivo
+                            Criação de logo e identidade visual
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Estratégia conceitual
+                            Design de interfaces centrado no usuário
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Direção visual
+                            Wireframes e protótipos interativos
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            CMS e hospedagens inclusos
+                            Pesquisa de usabilidade e testes com usuários
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Otimização para SEO
+                            Design system completo
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Revisões disponíveis
+                            Manual de marca com aplicações
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            E muito mais+
+                            Materiais para mídias sociais
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="plans__item">
                 <div>
-                    <h4>E-commerce</h4>
+                    <h4>Marketing Digital e SEO</h4>
                     <p class="plans__details">
-                        Loja virtual poderosa e intuitiva, pronta para impulsionar suas
-                        vendas online. Do design à gestão de pedidos, criamos sua
-                        plataforma de e-commerce completa!
+                        Estratégias completas de SEO e tráfego pago que posicionam sua marca nos primeiros resultados. 
+                        Atraia visitantes qualificados e maximize seu ROI com campanhas orientadas a resultados.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
-                        Agende uma call de 15min
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                        Impulsione seu negócio
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -134,45 +132,44 @@
                     <ul>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Design responsivo e personalizado
+                            Análise completa de SEO on-page e off-page
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Catálogo de produtos otimizado
+                            Otimização técnica para mecanismos de busca
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Sistema de pagamento seguro
+                            Estratégia de conteúdo para palavras-chave
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Painel administrativo intuitivo
+                            Campanhas de Google Ads e Meta Ads
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Otimização para SEO
+                            Análise de concorrência
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Integração com múltiplos meios de pagamento
+                            Relatórios mensais de performance
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            E muito mais+
+                            Estratégias de remarketing
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="plans__item">
                 <div>
-                    <h4>Identidade Visual</h4>
+                    <h4>Sistemas de Gestão (ERP e CRM)</h4>
                     <p class="plans__details">
-                        Identidade visual única que reflete a essência da sua marca. Do
-                        logotipo às aplicações, criamos a imagem que fará seu negócio se
-                        destacar!
+                        Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções 
+                        integradas centralizam informações, organizam seu funil de vendas e otimizam todas as operações.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/maniac-agenciamaniac/30min">
-                        Agende uma call de 15min
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                        Transforme seus processos
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -185,27 +182,31 @@
                     <ul>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Criação de logotipo exclusivo
+                            Análise de processos e necessidades
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Paleta de cores e tipografia personalizadas
+                            Implementação personalizada
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Manual de identidade visual completo
+                            Controle financeiro integrado
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Design de materiais impressos básicos
+                            Gestão de estoque e produtos
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            Versões digitais para web e redes sociais
+                            Automação de funil de vendas
                         </li>
                         <li>
                             <Icon name="CheckIcon"></Icon>
-                            E muito mais+
+                            Dashboards e relatórios personalizados
+                        </li>
+                        <li>
+                            <Icon name="CheckIcon"></Icon>
+                            Treinamento e suporte contínuo
                         </li>
                     </ul>
                 </div>

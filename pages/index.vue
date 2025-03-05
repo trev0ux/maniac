@@ -6,7 +6,6 @@
     </NuxtLink>
     <div class="w-100">
       <HeroBanner />
-      <HowItWorks />
     </div>
     <AnimateSection :fade-in-start="0.1" :fade-in-end="0.2">
       <Projects />

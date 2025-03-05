@@ -19,9 +19,6 @@
         <div>
           <ul>
             <li>
-              <NuxtLink to="#comoFunciona" @click="toggleMobileMenu">Como funciona</NuxtLink>
-            </li>
-            <li>
               <NuxtLink to="#projetos" @click="toggleMobileMenu">Projetos</NuxtLink>
             </li>
             <li>

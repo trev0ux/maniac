@@ -22,6 +22,7 @@
         </div>
     </section>
     <DigitalMarketingBanner />
+    <div class="container-fluid">
     <swiper :slides-per-view="1" :space-between="50" loop :autoplay="{ delay: 3000 }"
         :modules="modules">
         <swiper-slide>
@@ -45,6 +46,7 @@
             </div>
         </swiper-slide>
     </swiper>
+</div>
 </template>
 
 <script setup>

@@ -55,19 +55,20 @@ const interval = ref(null)
 
 const services = ref([
     {
-        title: "Design de interfaces",
-        content:
-            "Criamos interfaces únicas que capturam olhares, engajam usuários e deixam uma impressão duradoura. Garantindo que sua marca se destaque no mundo digital.",
+        title: "Design e UX",
+        content: "Identidade visual marcante e interfaces intuitivas que engajam usuários. Criamos experiências digitais que fortalecem sua marca e melhoram a jornada do cliente."
     },
     {
-        title: "Desenvolvimento de websites",
-        content:
-            "Construímos sites rápidos, seguros e escaláveis. Nossa equipe garante que seu site funcione perfeitamente e seja fácil de atualizar com nosso CMS intuitivo.",
+        title: "Otimização SEO",
+        content: "Posicionamos seu site nas primeiras posições do Google. Estratégias completas de SEO que atraem tráfego qualificado e aumentam sua visibilidade online."
     },
     {
-        title: "Identidade visual",
-        content:
-            "Com atenção aos detalhes e foco no usuário, desenvolvemos sua identidade visual para se destacar e entregar uma experiência excepcional. Transformamos suas ideias em produtos prontos para o mercado, tão atraentes visualmente quanto fáceis de usar.",
+        title: "Desenvolvimento de Websites",
+        content: "Sites rápidos, seguros e otimizados para conversão. Desenvolvemos plataformas responsivas com foco em usabilidade e resultados mensuráveis para sua empresa. Além de páginas estratégicas de alta conversão para suas campanhas. Design otimizado para capturar leads qualificados e aumentar suas vendas."
+    },
+    {
+        title: "Sistemas de Gestão (ERP e CRM)",
+        content: "Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções integradas de ERP e CRM centralizam informações, organizam seu funil de vendas e otimizam todas as operações da sua empresa."
     },
 ])
 
