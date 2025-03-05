@@ -16,10 +16,10 @@
     transition: background 0.15s linear, box-shadow 0.15s linear, padding 0.15s linear;
 
     &--shrink {
-        background-color: $white;
+        background-color: var(--white);
         padding: 8px 0;
-        box-shadow: 0px 2px 10px rgba($light-black, 0.09);
-        border-bottom: 1px solid rgba($dum-grey, .4);
+        box-shadow: 0px 2px 10px rgba(var(--light-black), 0.09);
+        border-bottom: 1px solid rgba(var(--dum-grey), .4);
 
         @include media-breakpoint-down(sm) {
             padding: 8px 0 !important;
@@ -29,7 +29,7 @@
     @include media-breakpoint-down(md) {
         padding: 12px 0px;
         mix-blend-mode: normal;
-        background-color: $white;
+        background-color: var(--white);
     }
 
     &__logo {
@@ -38,7 +38,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        color: $light-black;
+        color: var(--light-black);
         gap: 8px;
 
         @include media-breakpoint-down(sm) {
@@ -59,8 +59,8 @@
     &__burger-btn {
         height: 36px;
         width: 36px;
-        border: 1px solid $light-grey;
-        background-color: $bubble-white;
+        border: 1px solid var(--border-light);
+        background-color: var(--bubble-white);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,7 +71,7 @@
         span {
             height: 3px;
             width: 18px;
-            background-color: $card-border;
+            background-color: var(--border-light);
             border-radius: 100px;
             position: absolute;
             transition: all 0.4s ease-in-out;
@@ -93,7 +93,7 @@
             height: 36px;
             width: 36px;
             border: none;
-            background-color: $black-grey;
+            background-color: var(--white);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -104,7 +104,7 @@
             top: 20px;
             z-index: 20;
             span {
-                background-color: $white !important;
+                background-color: var(--border-light) !important;
 
                 &:nth-child(1) {
                     top: 9px;
@@ -127,12 +127,12 @@
         @include media-breakpoint-down(lg) {
             position: absolute;
             border-radius: 12px;
-            background-color: rgba($light-black, .8);
+            background-color: rgba(var(--light-black), .8);
             padding: 92px 26px 54px;
             top: 10px;
             left: 15px;
             width: calc(100% - 30px);
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(55px);
         }
 
         &--active {
@@ -159,6 +159,7 @@
                 display: flex;
                 align-items: center;
                 overflow: hidden;
+                color: var(--light-black);
 
                 &:nth-child(1) a {
                     animation-delay: 0.1s;
@@ -172,36 +173,31 @@
                     animation-delay: 0.3s;
                 }
     
-                &:nth-child(4) a {
-                    animation-delay: 0.4s;
-                }
+                &:not(.navbar__budget) {
+                    @include font-size($font-regular);
+                    font-weight: $font-weight--regular;
+                    cursor: pointer;
 
+                    @include media-breakpoint-down(md) {
+                        @include font-size($font-large);
+                        font-weight: $font-weight--bold;
+                        margin-bottom: 0;
+                        opacity: 0;
+                        transform: translateY(100px);
+                        animation: cascadeIn 0.9s ease forwards;
+                    }
+                }
                 a {
                     text-decoration: none;
-                    &:not(.navbar__budget) {
-                        color: $light-black;
-                        @include font-size($font-regular);
-                        font-weight: $font-weight--regular;
-                        cursor: pointer;
-
-                        @include media-breakpoint-down(md) {
-                            @include font-size($font-large);
-                            color: $white;
-                            font-weight: $font-weight--bold;
-                            margin-bottom: 0;
-                            opacity: 0;
-                            transform: translateY(100px);
-                            animation: cascadeIn 0.9s ease forwards;
-                        }
-                    }
+                    color: var(--light-black);
                 }
             }
         }
     }
 
     &__budget-mobile {
-        border: 1px solid rgba($dum-grey, .4);
-        color: $light-black !important;
+        border: 1px solid var(--dum-grey);
+        color: var(--light-black) !important;
         border-radius: 100px !important;
         position: relative;
         display: flex;
@@ -223,59 +219,66 @@
     }
 
     &__budget {
-        border: 1px solid rgba($dum-grey, .4);
-        color: $light-black !important;
-        border-radius: 100px !important;
-        padding: 10px 36px 10px 24px!important;
-        position: relative;
-        display: flex;
-        align-items: center;
 
-        @include media-breakpoint-up(lg) {
-            &:hover {
-                background-color: rgba($dum-grey, .1);
-                border: 1px solid rgba($dum-grey, .4) !important;
-            }
-        }
-
-        @include media-breakpoint-down(lg) {
-            background-color: $white;
-            border-color: $white;
-            color: $light-black;
-            justify-content: center;
-            @include font-size($font-large);
-            font-weight: $font-weight--medium;
-            width: 100%;
-            border-radius: 100px;
-            padding: 12px 32px !important;
-
-            &:hover {
-                background-color: $primary;
-                color: $white !important;
-            }
-        }
-
-        > div {
-            background-color: #3498db;
-            position: absolute;
-            transition: transform 0.5s linear; 
-        }
-
-        &:after {
-            content: "";
-            position: absolute;
-            right: 16px;
-            width: 8px;
-            height: 8px;
-            background-color: $secondary;
-            border-radius: 100px;
-            animation: pulse 2s infinite;
-
-            @include media-breakpoint-down(lg) {
-                content: initial;
+        a {
+            padding: 10px 36px 10px 24px!important;
+            border: 1px solid var(--dum-grey);
+            color: var(--light-black) !important;
+            border-radius: 100px !important;
+            position: relative;
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-up(lg) {
+                &:hover {
+                    background-color: #ffff;
+                    color: var(--background) !important;
+                    border: 1px solid #ffffff !important;
+                }
             }
     
+            @include media-breakpoint-down(lg) {
+                background-color: var(--light-black);
+                border-color: var(--white) !important;
+                color: var(--white) !important;
+                justify-content: center;
+                @include font-size($font-large);
+                font-weight: $font-weight--medium;
+                width: 100%;
+                border-radius: 100px;
+                padding: 12px 32px !important;
+    
+                &:hover {
+                    background-color: $primary;
+                    color: var(--white) !important;
+                }
+            }
+
+            > div {
+                background-color: #3498db;
+                position: absolute;
+                transition: transform 0.5s linear; 
+            }
+    
+            &:after {
+                content: "";
+                position: absolute;
+                right: 16px;
+                width: 8px;
+                height: 8px;
+                background-color: $secondary;
+                border-radius: 100px;
+                animation: pulse 2s infinite;
+    
+                @include media-breakpoint-down(lg) {
+                    content: initial;
+                }
+        
+            }
         }
+
+
+
+
 
     }
 }
@@ -284,12 +287,12 @@
 @keyframes pulse {
     0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(9, 208, 172, 0.7);
+      box-shadow: 0 0 0 0 rgba(24, 217, 20, 0.7);
     }
     
     70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
     }
     
     100% {

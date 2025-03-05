@@ -110,10 +110,10 @@ html body * {
 }
 
 .form-control {
-  border-color: rgba($primary, 0.3) !important;
+  border-color: rgba(var(--primary), 0.3) !important;
 
   &:focus {
-    box-shadow: 0 0 0 0.25rem rgba($primary, 0.2) !important;
+    box-shadow: 0 0 0 0.25rem rgba(var(--primary), 0.2) !important;
   }
 }
 
@@ -126,6 +126,7 @@ html body * {
     padding-right: 1rem !important;
   }
 }
+
 
 .btn {
   &:not(.btn-link) {
@@ -146,10 +147,10 @@ html body * {
     --bs-btn-active-bg: #fff;
     --bs-btn-focus-shadow-rgb: rgb(0, 0, 0, 0.3);
 
-    color: $light-black;
+    color: var(--light-black)k;
 
     &:hover {
-      color: $light-black;
+      color: var(--light-black)k;
     }
   }
 }

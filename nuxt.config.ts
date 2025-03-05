@@ -72,12 +72,8 @@ export default defineNuxtConfig({
       }
     ]
   },
-  build: {
-    transpile: ['gsap']
-  },
   plugins: [
     '@/plugins/lenis.client.ts',
-    '@/plugins/gsap.client.ts',
     '@/plugins/swiper.js'
   ]
 })

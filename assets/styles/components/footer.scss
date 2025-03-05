@@ -7,7 +7,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    border-top: 1px solid $card-border;
+    border-top: 1px solid var(--card-border);
 
     > article {
         display: flex;
@@ -25,7 +25,7 @@
                 }
                 h4 {
                     @include font-size($font-xx-big);
-                    color: $light-black;
+                    color: var(--light-black);
                     margin-bottom: 16px;
                     font-weight: $font-weight--regular;
 
@@ -82,7 +82,7 @@
 
                     li, a {
                         @include font-size($font-x-big);
-                        color: $light-black;
+                        color: var(--light-black);
                         font-weight: $font-weight--regular;   
                         text-decoration: none;
 
@@ -93,7 +93,7 @@
 
                     h6 {
                         @include font-size($font-x-big);
-                        color: $light-black;
+                        color: var(--light-black);
                         font-weight: $font-weight--semibold;   
                         margin-bottom: 0; 
                         
@@ -129,7 +129,7 @@
 
         p {
             @include font-size($font-regular);
-            color: $light-black;
+            color: var(--light-black);
             margin-bottom: 0;
             font-weight: $font-weight--light;
             white-space: nowrap;

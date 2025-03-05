@@ -84,9 +84,9 @@ export default {
 .banner-container {
   width: 100%;
   overflow: hidden;
-  background: $white;
-  border-top: 1px solid $light-black;
-  border-bottom: 1px solid $light-black;
+  background: var(--white);
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
   padding: 1rem 0;
   margin-top: 30px;
 
@@ -103,7 +103,7 @@ export default {
 
 .term {
   display: inline-block;
-  color: $light-black;
+  color: var(--light-black);
   font-size: 1rem;
   @include font-size($font-regular);
   font-weight: 400;
