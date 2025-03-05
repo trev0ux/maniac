@@ -1,5 +1,5 @@
 <template>
-    <section class="plans container-fluid" id="servicos">
+    <section class="plans container-fluid" id="servicos-completo">
         <div class="plans__info">
             <div>
                 <span>03</span>
@@ -19,7 +19,7 @@
                         responsivas e otimizadas que transformam visitantes em clientes e impulsionam seu negócio online.
                     </p>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
-                        Solicite uma proposta personalizada
+                        Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -69,7 +69,7 @@
                         Criamos experiências digitais memoráveis que geram engajamento e fortalecem sua presença no mercado.
                     </p>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
-                        Vamos criar sua identidade
+                        Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -119,7 +119,7 @@
                         Atraia visitantes qualificados e maximize seu ROI com campanhas orientadas a resultados.
                     </p>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
-                        Impulsione seu negócio
+                        Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -169,7 +169,7 @@
                         integradas centralizam informações, organizam seu funil de vendas e otimizam todas as operações.
                     </p>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
-                        Transforme seus processos
+                        Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>

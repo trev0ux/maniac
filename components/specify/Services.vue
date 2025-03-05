@@ -59,11 +59,7 @@ const services = ref([
         content: "Identidade visual marcante e interfaces intuitivas que engajam usuários. Criamos experiências digitais que fortalecem sua marca e melhoram a jornada do cliente."
     },
     {
-        title: "Otimização SEO",
-        content: "Posicionamos seu site nas primeiras posições do Google. Estratégias completas de SEO que atraem tráfego qualificado e aumentam sua visibilidade online."
-    },
-    {
-        title: "Desenvolvimento de Websites",
+        title: "Desenvolvimento Web Completo",
         content: "Sites rápidos, seguros e otimizados para conversão. Desenvolvemos plataformas responsivas com foco em usabilidade e resultados mensuráveis para sua empresa. Além de páginas estratégicas de alta conversão para suas campanhas. Design otimizado para capturar leads qualificados e aumentar suas vendas."
     },
     {

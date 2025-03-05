@@ -25,7 +25,7 @@
               <NuxtLink to="#servicos" @click="toggleMobileMenu">Nosso trabalho</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#precos" @click="toggleMobileMenu">Serviços</NuxtLink>
+              <NuxtLink to="#servicos-completo" @click="toggleMobileMenu">Serviços</NuxtLink>
             </li>
             <li class=" navbar__budget">
               <NuxtLink class="btn" to="https://wa.me/5571992715102?text=Ol%C3%A1%2C%20tudo%20bem%3F%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20acerca%20de%20um%20servi%C3%A7o" external>

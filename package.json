@@ -16,7 +16,6 @@
     "@nuxtjs/sitemap": "^6.1.2",
     "@studio-freight/lenis": "^1.0.42",
     "bootstrap": "^5.3.3",
-    "gsap": "^3.12.5",
     "lenis": "^1.1.13",
     "nuxt": "^3.12.1",
     "nuxt-icon": "^0.6.10",

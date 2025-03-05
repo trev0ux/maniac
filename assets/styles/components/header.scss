@@ -93,7 +93,7 @@
             height: 36px;
             width: 36px;
             border: none;
-            background-color: var(--white);
+            background-color: var(--light-black);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -104,7 +104,7 @@
             top: 20px;
             z-index: 20;
             span {
-                background-color: var(--border-light) !important;
+                background-color: var(--bubble-white) !important;
 
                 &:nth-child(1) {
                     top: 9px;
@@ -127,7 +127,7 @@
         @include media-breakpoint-down(lg) {
             position: absolute;
             border-radius: 12px;
-            background-color: rgba(var(--light-black), .8);
+            background-color: rgba(0, 0, 0, .4);
             padding: 92px 26px 54px;
             top: 10px;
             left: 15px;
