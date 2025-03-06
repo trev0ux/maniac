@@ -4,38 +4,38 @@
             <div>
                 <span>01</span>
                 <h3>
-                    <WordAnimation content="De projeto em projeto - ajudamos sua marca a crescer e mostrar seumelhor para o mundo" />
+                    <WordAnimation :content="$t('projects.title')" />
                 </h3>
             </div>
-            <h4>(Projetos desenvolvidos)</h4>
+            <h4>{{ $t('projects.description') }}</h4>
         </div>
         <article>
             <div>
                 <NuxtImg src="/whatsapp-api.png" alt="WhatsApp API Project" />
                 <div>
-                    <h4>Whatsapp API - Volare Host</h4>
-                    <h4>Landing Page</h4>
+                    <h4>{{ $t('projects.whatsapp.name') }}</h4>
+                    <h4>{{ $t('projects.whatsapp.type') }}</h4>
                 </div>
             </div>
             <div>
                 <NuxtImg src="/taxpay.png" alt="Taxpay Projeto" />
                 <div>
-                    <h4>Taxpay</h4>
-                    <h4>Site institucional</h4>
+                    <h4>{{ $t('projects.taxpay.name') }}</h4>
+                    <h4>{{ $t('projects.taxpay.type') }}</h4>
                 </div>
             </div>
             <div>
                 <NuxtImg src="/remotando.png" alt="Remotando Project" />
                 <div>
-                    <h4>Remotando</h4>
-                    <h4>Site</h4>
+                    <h4>{{ $t('projects.remotando.name') }}</h4>
+                    <h4>{{ $t('projects.remotando.type') }}</h4>
                 </div>
             </div>
             <div>
                 <NuxtImg src="/ebookparking.png" alt="Ebookparking Projeto" />
                 <div>
-                    <h4>Ebookparking</h4>
-                    <h4>Sistema de agendamento para estacionamento</h4>
+                    <h4>{{ $t('projects.ebookparking.name') }}</h4>
+                    <h4>{{ $t('projects.ebookparking.type') }}</h4>
                 </div>
             </div>
         </article>

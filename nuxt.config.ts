@@ -3,10 +3,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [{ src: '~/assets/styles/globals.scss', lang: 'sass' }, { src: '~/assets/styles/fonts.scss', lang: 'scss' }],
   target: 'static',
+
   site: {
     url: 'https://agenciamaniac.digital',
     name: 'Maniac'
   },
+
   app: {
     head: {
       title: "Maniac - Criação de Sites, E-commerce e Branding",
@@ -35,7 +37,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts", '@nuxtjs/sitemap', '@nuxtjs/robots'],
+
   fonts: {
     families: [
       {
@@ -72,8 +76,11 @@ export default defineNuxtConfig({
       }
     ]
   },
+
   plugins: [
     '@/plugins/lenis.client.ts',
     '@/plugins/swiper.js'
-  ]
+  ],
+
+  compatibilityDate: '2025-03-06'
 })

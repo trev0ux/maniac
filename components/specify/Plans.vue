@@ -5,10 +5,10 @@
                 <span>03</span>
                 <h3>
                     <WordAnimation
-                        content="Soluções digitais de alto impacto - Impulsionamos seu negócio com estratégias personalizadas que geram resultados" />
+                        :content="$t('services.title')" />
                 </h3>
             </div>
-            <h4>(Nossos serviços)</h4>
+            <h4>{{ $t('services.description') }}</h4>
         </div>
         <article>
             <div class="plans__item">

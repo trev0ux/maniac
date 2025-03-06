@@ -9,11 +9,11 @@
       </div>
       <div>
         <ul>
-          <li><NuxtLink to="#services">Serviços</NuxtLink></li>
-          <li><NuxtLink to="#projetos">Projetos</NuxtLink></li>
+          <li><NuxtLink to="#services">{{ $t('footer.services') }}</NuxtLink></li>
+          <li><NuxtLink to="#projetos">{{ $t('footer.projects') }}</NuxtLink></li>
         </ul>
         <ul>
-            <li><h6>Redes Sociais</h6></li>
+            <li><h6>{{ $t('footer.networks') }}</h6></li>
             <li><NuxtLink to="https://www.linkedin.com/company/agenciamaniac" external>LinkedIn</NuxtLink></li>
             <li><NuxtLink to="">Instagram</NuxtLink></li>
         </ul>
@@ -21,7 +21,7 @@
     </article>
     <div>
       <Icon name="LogoIcon"></Icon>
-        <p>© 2024 - Todos os direitos reservados.</p>
+        <p>{{ $t('footer.rights') }}</p>
     </div>
   </footer>
 </template>

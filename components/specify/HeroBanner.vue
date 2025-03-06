@@ -2,13 +2,13 @@
     <section>
         <div class="banner container">
             <h1>
-                <WordAnimation content="Sites que não só resolvem problemas: impressionam seu cliente e te fazem vender mais." />
+                <WordAnimation :content="$t('hero.title')" />
             </h1>
             <p>
-                Desenvolvemos sites fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!
+                {{ $t('hero.subtitle') }}
             </p>
             <NuxtLink class="btn btn-primary" to="#servicos-completo">
-                Conheça nossos serviços
+                    {{ $t('hero.action') }}
                 <div class="arrows-block">
                     <div class="arrows-icon">
                         <Icon name="ArrowIcon"></Icon>

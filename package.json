@@ -10,18 +10,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.10.1",
+    "@nuxt/fonts": "^0.0.1",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/robots": "^4.1.9",
     "@nuxtjs/sitemap": "^6.1.2",
     "@studio-freight/lenis": "^1.0.42",
     "bootstrap": "^5.3.3",
     "lenis": "^1.1.13",
-    "nuxt": "^3.12.1",
+    "nuxt": "^3.6.0",
     "nuxt-icon": "^0.6.10",
     "rfs": "^10.0.0",
     "swiper": "^11.1.14",
     "vue": "^3.4.27",
+    "vue-i18n": "^10.0.5",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {

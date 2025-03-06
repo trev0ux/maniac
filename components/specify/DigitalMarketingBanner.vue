@@ -22,15 +22,15 @@ export default {
     const SPEED = 1
 
     const marketingTerms = [
-      'E-commerce',
-      'UX Design', 
-      'Web Design',
-      'Landing Pages',
-      'Site Institucional',
-      'SEO',
-      'Branding',
-      'Design Gráfico'
-    ]
+    "E-commerce",
+    "UX Design",
+    "Web Design",
+    "Landing Pages",
+    "Corporate Website",
+    "SEO",
+    "Branding",
+    "Graphic Design"
+  ]
 
     // Create three sets for smoother looping
     const displayedTerms = computed(() => [...marketingTerms, ...marketingTerms, ...marketingTerms])

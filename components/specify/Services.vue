@@ -4,10 +4,10 @@
             <div>
                 <span>02</span>
                 <h3>
-                    <WordAnimation content="Simples e eficiente - entregamos soluções fora da curva que deixam uma impressão duradoura nos seus clientes"/>
+                    <WordAnimation :content="$t('services.title')"/>
                 </h3>
             </div>
-            <h4>(Nossos serviços)</h4>
+            <h4>{{ $t('services.description') }}</h4>
         </div>
         <article class="row">
             <div class="services__image">
@@ -16,7 +16,7 @@
             <div>
                 <div class="services__subtitle">
                     <h3>
-                        <Icon name="ArrowIcon"></Icon> O que nós oferecemos
+                        <Icon name="ArrowIcon"></Icon> {{ $t('services.subtitle') }}
                     </h3>
                 </div>
                 <article class="services__accordion-container">
