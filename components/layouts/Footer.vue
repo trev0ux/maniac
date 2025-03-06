@@ -12,9 +12,9 @@
             <li><NuxtLink to="#projetos">Projetos</NuxtLink></li>
           </ul>
           <ul>
-              <li><h6>Redes Sociais</h6></li>
+              <li><h5>Redes Sociais</h5></li>
               <li><NuxtLink to="https://www.linkedin.com/company/agenciamaniac" external>LinkedIn</NuxtLink></li>
-              <li><NuxtLink to="">Instagram</NuxtLink></li>
+              <li><NuxtLink to="https://www.instagram.com/agenciamaniac">Instagram</NuxtLink></li>
           </ul>
         </div>
       </article>

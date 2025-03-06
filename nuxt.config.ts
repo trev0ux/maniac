@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     },
     app: {
       head: {
+        htmlAttrs: {
+          lang: 'pt-BR'
+        },
         title: "Maniac: Agência Digital | Criação de Sites",
         meta: [
           { hid: 'description', name: 'description', content: 'A Maniac é uma agência digital especializada em criação de sites, e-commerces e sistemas de gestão (ERP e CRM). Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },

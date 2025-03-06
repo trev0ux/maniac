@@ -22,7 +22,6 @@
 <script setup>
 import { Icon } from "#components";
 import HeroBanner from "@/components/specify/HeroBanner";
-import HowItWorks from "@/components/specify/HowItWorks";
 import Projects from "@/components/specify/Projects";
 import Services from "@/components/specify/Services";
 import Plans from "@/components/specify/Plans";

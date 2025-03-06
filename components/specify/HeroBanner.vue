@@ -4,9 +4,9 @@
             <h1>
                 <WordAnimation content="Sites que não só resolvem problemas: impressionam seu cliente e te fazem vender mais." />
             </h1>
-            <p>
+            <h2>
                 Desenvolvemos sites fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!
-            </p>
+            </h2>
             <NuxtLink class="btn btn-primary" to="#servicos-completo">
                 Conheça nossos serviços
                 <div class="arrows-block">
