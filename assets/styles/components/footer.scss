@@ -91,7 +91,7 @@
                         }
                     }
 
-                    h6 {
+                    h5 {
                         @include font-size($font-x-big);
                         color: var(--light-black);
                         font-weight: $font-weight--semibold;   

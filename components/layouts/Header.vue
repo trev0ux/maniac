@@ -1,11 +1,11 @@
 <template>
   <header :class="'navbar ' + (isShrink ? 'navbar--shrink' : '')">
     <div class="container-fluid">
-      <NuxtLink to="/" class="navbar__logo">
+      <NuxtLink to="/" class="navbar__logo" aria-label="Maniac">
         <Icon name="LogoIcon"></Icon>
       </NuxtLink>
       <div class="d-flex gap-3 align-items-center">
-        <NuxtLink class="btn navbar__budget-mobile d-lg-none">
+        <NuxtLink class="btn navbar__budget-mobile d-lg-none" to="https://wa.me/5571992715102?text=Ol%C3%A1%2C%20tudo%20bem%3F%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20acerca%20de%20um%20servi%C3%A7o" external>
           Pedir um orçamento
         </NuxtLink>
         <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"

@@ -27,7 +27,13 @@
         <swiper-slide>
             <article class="banner__images container-fluid mt-5">
                 <div>
-                    <NuxtImg ref="image1" src="/mbaile2.png" alt="mobile"/>
+                <NuxtImg     
+                    format="webp" 
+                    loading="lazy"
+                    placeholder 
+                    ref="image1" 
+                    src="/mbaile2.png" 
+                    alt="mobile"/>
                 </div>
                 <div>
                     <NuxtImg ref="image2" src="/image-project.png" alt="mobile" />
@@ -36,12 +42,20 @@
         </swiper-slide>
         <swiper-slide>
             <div class="container-fluid banner__image-project mt-5">
-                <NuxtImg src="/cardmockup.png" alt="card"/>
+                <NuxtImg src="/cardmockup.png"
+                        format="webp" 
+                        loading="lazy"
+                        placeholder  
+                         alt="card"/>
             </div>
         </swiper-slide>
         <swiper-slide>
             <div class="container-fluid banner__image-project mt-5">
-                <NuxtImg src="/mockupdesk2.png" alt="desktop"/>
+                <NuxtImg src="/mockupdesk2.png" 
+                            alt="desktop"
+                            format="webp" 
+                    loading="lazy"
+                    placeholder />
             </div>
         </swiper-slide>
     </swiper>
