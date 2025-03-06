@@ -41,9 +41,12 @@
         color: var(--light-black);
         gap: 8px;
         letter-spacing: 1px;
+        left: -7px;
+        position: relative;
 
         @include media-breakpoint-down(sm) {
             @include font-size($font-medium);
+            left: -8px;
         }
 
         svg {
@@ -53,7 +56,8 @@
             top: 7px;
 
             @include media-breakpoint-down(md) {
-                height: 32px;
+                height: 20px;
+                left: 8px;
             }
         }
     }
