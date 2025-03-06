@@ -2,7 +2,7 @@
     <footer class="footer container-fluid">
       <article>
         <div>
-          <h4>maniac@agenciamaniac.com</h4>
+          <h4>miraisoft@gmail.com</h4>
           <h4>(71) 99271-5102</h4>
           <h4>Salvador, Bahia</h4>
         </div>
@@ -13,8 +13,8 @@
           </ul>
           <ul>
               <li><h5>Redes Sociais</h5></li>
-              <li><NuxtLink to="https://www.linkedin.com/company/agenciamaniac" external>LinkedIn</NuxtLink></li>
-              <li><NuxtLink to="https://www.instagram.com/agenciamaniac">Instagram</NuxtLink></li>
+              <li><NuxtLink to="https://www.linkedin.com/company/miraisoft" external>LinkedIn</NuxtLink></li>
+              <li><NuxtLink to="https://www.instagram.com/miraisoft.co/">Instagram</NuxtLink></li>
           </ul>
         </div>
       </article>
