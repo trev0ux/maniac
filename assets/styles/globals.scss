@@ -132,10 +132,6 @@ html body * {
   &:not(.btn-link) {
     padding: 12px 24px;
     border-radius: 8px;
-
-    @include media-breakpoint-down(sm) {
-      @include font-size($font-small);
-    }
   }
 
   &-secondary {

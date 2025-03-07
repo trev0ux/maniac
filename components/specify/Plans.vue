@@ -18,7 +18,7 @@
                         Sites institucionais, e-commerces e landing pages de alta conversão. Desenvolvemos plataformas 
                         responsivas e otimizadas que transformam visitantes em clientes e impulsionam seu negócio online.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="mailto:miraisoft.co@gmail.com?subject=Contato pelo Site&body=Olá, gostaria de solicitar mais informações sobre seus serviços.">
                         Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">
@@ -68,7 +68,7 @@
                         Identidade visual marcante e interfaces intuitivas que conectam sua marca com os usuários. 
                         Criamos experiências digitais memoráveis que geram engajamento e fortalecem sua presença no mercado.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="mailto:miraisoft.co@gmail.com?subject=Contato pelo Site&body=Olá, gostaria de solicitar mais informações sobre seus serviços.">
                         Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">
@@ -118,7 +118,7 @@
                         Estratégias completas de SEO e tráfego pago que posicionam sua marca nos primeiros resultados. 
                         Atraia visitantes qualificados e maximize seu ROI com campanhas orientadas a resultados.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="mailto:miraisoft.co@gmail.com?subject=Contato pelo Site&body=Olá, gostaria de solicitar mais informações sobre seus serviços.">
                         Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">
@@ -168,7 +168,7 @@
                         Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções 
                         integradas centralizam informações, organizam seu funil de vendas e otimizam todas as operações.
                     </p>
-                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
+                    <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="mailto:miraisoft.co@gmail.com?subject=Contato pelo Site&body=Olá, gostaria de solicitar mais informações sobre seus serviços.">
                         Solicitar um orçamento
                         <div class="arrows-block">
                             <div class="arrows-icon">

@@ -28,11 +28,6 @@
             <li>
               <NuxtLink to="#servicos-completo" @click="toggleMobileMenu">Serviços</NuxtLink>
             </li>
-            <li class=" navbar__budget">
-              <NuxtLink class="btn" to="https://wa.me/5571991178092" external>
-                Pedir um orçamento
-              </NuxtLink>
-            </li>
           </ul>
         </div>
       </nav>
