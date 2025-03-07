@@ -4,30 +4,30 @@ export default defineNuxtConfig({
     css: [{ src: '~/assets/styles/globals.scss', lang: 'sass' }],
     target: 'static',
     site: {
-      url: 'https://miraisoft.co',
-      name: 'Miraisoft'
+      url: 'https://miraisoft.digital',
+      name: 'miraisoft'
     },
     app: {
       head: {
         htmlAttrs: {
           lang: 'pt-BR'
         },
-        title: "Miraisoft: Agência Digital | Criação de Sites",
+        title: "miraisoft: Agência Digital | Criação de Sites",
         meta: [
-          { hid: 'description', name: 'description', content: 'A Miraisoft é uma agência digital especializada em criação de sites, e-commerces e sistemas de gestão (ERP e CRM). Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
+          { hid: 'description', name: 'description', content: 'A miraisoft é uma agência digital especializada em criação de sites, e-commerces e sistemas de gestão (ERP e CRM). Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
           { hid: 'keywords', name: 'keywords', content: 'miraisoft, agencia miraisoft, miraisoft software, criar site, criação de sites profissionais, criação de sites em salvador, criação de sites baratos, e-commerce, branding, criação de site, agência digital, Brasil, design de marca, criação de logo, soluções digitais' },
-          { hid: 'author', name: 'author', content: 'Miraisoft: Agência Digital | Criação de Sites' },
+          { hid: 'author', name: 'author', content: 'miraisoft: Agência Digital | Criação de Sites' },
     
-          { hid: 'og:title', property: 'og:title', content: 'Miraisoft: Agência Digital | Criação de Sites' },
-          { hid: 'og:description', property: 'og:description', content: 'A Miraisoft é uma agência digital especializada em criação de sites, e-commerces e sistemas de gestão (ERP e CRM). Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
+          { hid: 'og:title', property: 'og:title', content: 'miraisoft: Agência Digital | Criação de Sites' },
+          { hid: 'og:description', property: 'og:description', content: 'A miraisoft é uma agência digital especializada em criação de sites, e-commerces e sistemas de gestão (ERP e CRM). Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
           { hid: 'og:image', property: 'og:image', content: '/favicon-32x32.png' },
-          { hid: 'og:url', property: 'og:url', content: 'https://www.miraisoft.co' },
+          { hid: 'og:url', property: 'og:url', content: 'https://www.miraisoft.digital' },
           { hid: 'og:type', property: 'og:type', content: 'website' },
     
           { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1' },
     
           { hid: 'robots', name: 'robots', content: 'index, follow' },
-          { hid: 'canonical', rel: 'canonical', href: 'https://www.miraisoft.co' },
+          { hid: 'canonical', rel: 'canonical', href: 'https://www.miraisoft.digital' },
         ],
         link: [
           { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32' },

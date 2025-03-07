@@ -1,11 +1,11 @@
 <template>
     <section>
         <div class="banner container">
-            <h1>
-                <WordAnimation content="Sites que não só resolvem problemas: impressionam seu cliente e te fazem vender mais." />
+            <h1 aria-label="Sites e sistemas que não só resolvem problemas: impressionam seu cliente e te fazem vender mais.">
+                <WordAnimation content="Sites e sistemas que não só resolvem problemas: impressionam seu cliente e te fazem vender mais." />
             </h1>
             <h2>
-                Desenvolvemos sites fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!
+                Criamos experiências digitais fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!
             </h2>
             <NuxtLink class="btn btn-primary" to="#servicos-completo">
                 Conheça nossos serviços
@@ -39,15 +39,6 @@
                     <NuxtImg ref="image2" src="/image-project.png" alt="mobile" />
                 </div>
             </article>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="container-fluid banner__image-project mt-5">
-                <NuxtImg src="/cardmockup.png"
-                        format="webp" 
-                        loading="lazy"
-                        placeholder  
-                         alt="card"/>
-            </div>
         </swiper-slide>
         <swiper-slide>
             <div class="container-fluid banner__image-project mt-5">

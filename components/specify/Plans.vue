@@ -3,7 +3,7 @@
         <div class="plans__info">
             <div>
                 <span>03</span>
-                <h3>
+                <h3 aria-label="Soluções digitais de alto impacto - Impulsionamos seu negócio com estratégias personalizadas que geram resultados">
                     <WordAnimation
                         content="Soluções digitais de alto impacto - Impulsionamos seu negócio com estratégias personalizadas que geram resultados" />
                 </h3>

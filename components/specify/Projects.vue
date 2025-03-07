@@ -3,7 +3,7 @@
         <div class="projects__info">
             <div>
                 <span>01</span>
-                <h3>
+                <h3 aria-label="De projeto em projeto - ajudamos sua marca a crescer e mostrar seumelhor para o mundo">
                     <WordAnimation content="De projeto em projeto - ajudamos sua marca a crescer e mostrar seumelhor para o mundo" />
                 </h3>
             </div>
