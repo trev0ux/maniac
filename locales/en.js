@@ -64,7 +64,7 @@ export default {
         details:
           "Corporate websites, e-commerce, and high-conversion landing pages. We develop responsive and optimized platforms that transform visitors into customers and boost your online business.",
         action: "Request a Quote",
-        items: [
+        itens: [
           "Custom-designed corporate websites",
           "Complete and secure e-commerce",
           "High-conversion landing pages",
@@ -79,7 +79,7 @@ export default {
         details:
           "A striking visual identity and intuitive interfaces that connect your brand with users. We create memorable digital experiences that drive engagement and strengthen your market presence.",
         action: "Request a Quote",
-        items: [
+        itens: [
           "Logo and visual identity creation",
           "User-centered interface design",
           "Wireframes and interactive prototypes",
@@ -94,7 +94,7 @@ export default {
         details:
           "Comprehensive SEO strategies and paid traffic campaigns that position your brand in top search results. Attract qualified visitors and maximize your ROI with results-driven campaigns.",
         action: "Request a Quote",
-        items: [
+        itens: [
           "Complete on-page and off-page SEO analysis",
           "Technical optimization for search engines",
           "Keyword-focused content strategy",
@@ -109,7 +109,7 @@ export default {
         details:
           "Automate processes and enhance customer relationships. Our integrated solutions centralize information, organize your sales funnel, and optimize all operations.",
         action: "Request a Quote",
-        items: [
+        itens: [
           "Process and needs analysis",
           "Custom implementation",
           "Integrated financial control",

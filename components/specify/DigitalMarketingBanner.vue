@@ -10,27 +10,20 @@
 
 <script>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n';
+
 
 export default {
   name: 'DigitalMarketingBanner',
   setup() {
+    const { locale, messages } = useI18n(); 
     const position = ref(0)
     const container = ref(null)
     let animationId = null
     let contentWidth = 0
     let singleSetWidth = 0
     const SPEED = 1
-
-    const marketingTerms = [
-    "E-commerce",
-    "UX Design",
-    "Web Design",
-    "Landing Pages",
-    "Corporate Website",
-    "SEO",
-    "Branding",
-    "Graphic Design"
-  ]
+    const marketingTerms = messages.value[locale.value].marketing_terms;
 
     // Create three sets for smoother looping
     const displayedTerms = computed(() => [...marketingTerms, ...marketingTerms, ...marketingTerms])
