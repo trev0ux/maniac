@@ -1,12 +1,12 @@
 <template>
     <section>
         <div class="banner container">
-            <h1>
+            <h1 :aria-label="$t('hero.title')">
                 <WordAnimation :content="$t('hero.title')" />
             </h1>
-            <p>
+            <h2>
                 {{ $t('hero.subtitle') }}
-            </p>
+            </h2>
             <NuxtLink class="btn btn-primary" to="#servicos-completo">
                     {{ $t('hero.action') }}
                 <div class="arrows-block">
@@ -27,21 +27,28 @@
         <swiper-slide>
             <article class="banner__images container-fluid mt-5">
                 <div>
-                    <NuxtImg ref="image1" src="/mbaile2.png" alt="mobile"/>
+                <NuxtImg     
+                    format="webp" 
+                    loading="lazy"
+                    placeholder 
+                    ref="image1" 
+                    src="/mbaile2.webp" 
+                    alt="mobile"/>
                 </div>
                 <div>
-                    <NuxtImg ref="image2" src="/image-project.png" alt="mobile" />
+                    <NuxtImg ref="image2" src="/image-project.webp" alt="mobile"                     format="webp" 
+                    loading="lazy"
+ />
                 </div>
             </article>
         </swiper-slide>
         <swiper-slide>
             <div class="container-fluid banner__image-project mt-5">
-                <NuxtImg src="/cardmockup.png" alt="card"/>
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-            <div class="container-fluid banner__image-project mt-5">
-                <NuxtImg src="/mockupdesk2.png" alt="desktop"/>
+                <NuxtImg src="/mockupdesk2.webp" 
+                            alt="desktop"
+                            format="webp" 
+                    loading="lazy"
+                    placeholder />
             </div>
         </swiper-slide>
     </swiper>

@@ -3,15 +3,17 @@
         <div class="services__info">
             <div>
                 <span>02</span>
-                <h3>
-                    <WordAnimation :content="$t('services.title')"/>
+                <h3 aria-label="Simples e eficiente - entregamos soluções fora da curva que deixam uma impressão duradoura nos seus clientes">
+                    <WordAnimation content="Simples e eficiente - entregamos soluções fora da curva que deixam uma impressão duradoura nos seus clientes"/>
                 </h3>
             </div>
             <h4>{{ $t('services.description') }}</h4>
         </div>
         <article class="row">
             <div class="services__image">
-                <NuxtImg src="/computer.png" alt="Team" />
+                <NuxtImg src="/computer.webp" alt="Team"                    format="webp" 
+                    loading="lazy"
+                    placeholder  />
             </div>
             <div>
                 <div class="services__subtitle">

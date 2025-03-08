@@ -7,9 +7,9 @@ export default {
   },
   hero: {
     title:
-      "Websites that not only solve problems: they impress your customers and help you sell more.",
+      "Websites and systems that not only solve problems but also impress your clients and boost your sales.",
     subtitle:
-      "We develop outstanding websites aimed at expanding your business with measurable results!",
+      "We create outstanding digital experiences with the goal of expanding your business with measurable results!",
     action: "Learn about our services",
   },
   marketing_terms: [
@@ -63,7 +63,7 @@ export default {
         title: "Complete Web Development",
         details:
           "Corporate websites, e-commerce, and high-conversion landing pages. We develop responsive and optimized platforms that transform visitors into customers and boost your online business.",
-        action: "Request a Quote",
+        action: "View price",
         itens: [
           "Custom-designed corporate websites",
           "Complete and secure e-commerce",
@@ -78,7 +78,7 @@ export default {
         title: "Design and UX",
         details:
           "A striking visual identity and intuitive interfaces that connect your brand with users. We create memorable digital experiences that drive engagement and strengthen your market presence.",
-        action: "Request a Quote",
+        action: "View price",
         itens: [
           "Logo and visual identity creation",
           "User-centered interface design",
@@ -93,7 +93,7 @@ export default {
         title: "Digital Marketing and SEO",
         details:
           "Comprehensive SEO strategies and paid traffic campaigns that position your brand in top search results. Attract qualified visitors and maximize your ROI with results-driven campaigns.",
-        action: "Request a Quote",
+        action: "View price",
         itens: [
           "Complete on-page and off-page SEO analysis",
           "Technical optimization for search engines",
@@ -108,7 +108,7 @@ export default {
         title: "Management Systems (ERP and CRM)",
         details:
           "Automate processes and enhance customer relationships. Our integrated solutions centralize information, organize your sales funnel, and optimize all operations.",
-        action: "Request a Quote",
+        action: "View price",
         itens: [
           "Process and needs analysis",
           "Custom implementation",

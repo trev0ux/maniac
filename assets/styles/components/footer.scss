@@ -91,7 +91,7 @@
                         }
                     }
 
-                    h6 {
+                    h5 {
                         @include font-size($font-x-big);
                         color: var(--light-black);
                         font-weight: $font-weight--semibold;   
@@ -118,11 +118,11 @@
         }
 
         svg {
-            width: 320px;
+            width: 120px;
             height: 120px;
 
             @include media-breakpoint-down(md) {
-                width: 120px;
+                width: 60px;
                 height: 60px;
             }
         }

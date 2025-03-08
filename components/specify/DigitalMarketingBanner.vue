@@ -25,13 +25,11 @@ export default {
     const SPEED = 1
     const marketingTerms = messages.value[locale.value].marketing_terms;
 
-    // Create three sets for smoother looping
     const displayedTerms = computed(() => [...marketingTerms, ...marketingTerms, ...marketingTerms])
 
     const animate = () => {
       position.value -= SPEED
       
-      // Reset position when first set has scrolled past
       if (-position.value >= singleSetWidth) {
         position.value = 0
       }
@@ -43,10 +41,8 @@ export default {
       const contentEl = container.value?.querySelector('.banner-content')
       if (contentEl) {
         contentWidth = contentEl.offsetWidth
-        // Calculate the width of one set of terms (total width / 3 since we have 3 sets)
         singleSetWidth = contentWidth / 3
         
-        // Start the animation from 0
         position.value = 0
         animate()
       }

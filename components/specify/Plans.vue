@@ -3,12 +3,12 @@
         <div class="plans__info">
             <div>
                 <span>03</span>
-                <h3>
+                <h3 :aria-label="$t('products.title')">
                     <WordAnimation
-                        :content="$t('services.title')" />
+                        :content="$t('products.title')" />
                 </h3>
             </div>
-            <h4>{{ $t('services.description') }}</h4>
+            <h4>{{ $t('products.description') }}</h4>
         </div>
         <article>
             <div v-for="(item, index) in articlesList" :key="index + '_article'" class="plans__item">

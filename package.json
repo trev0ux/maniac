@@ -26,6 +26,8 @@
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
-    "sass": "^1.77.6"
+    "@nuxtjs/imagemin": "^1.0.1",
+    "sass": "^1.77.6",
+    "vite-plugin-imagemin": "^0.6.1"
   }
 }

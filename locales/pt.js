@@ -7,9 +7,9 @@ export default {
   },
   hero: {
     title:
-      "Sites que não só resolvem problemas: impressionam seu cliente e te fazem vender mais.",
+      "Sites e sistemas que não só resolvem problemas: impressionam seu cliente e te fazem vender mais.",
     subtitle:
-      "Desenvolvemos sites fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!",
+      "Criamos experiências digitais fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!",
     action: "Conheça nossos serviços",
   },
   marketing_terms: [
@@ -65,8 +65,8 @@ export default {
       {
         title: "Desenvolvimento Web Completo",
         details:
-          "Sites institucionais, e-commerces e landing pages de alta conversão. Desenvolvemos plataformas <br> responsivas e otimizadas que transformam visitantes em clientes e impulsionam seu negócio online.",
-        action: "Solicitar um orçamento",
+          "Sites institucionais, e-commerces e landing pages de alta conversão. <br>Desenvolvemos plataformas responsivas e otimizadas que transformam visitantes em clientes e impulsionam seu negócio online.",
+        action: "Ver preço",
         itens: [
           "Sites institucionais com design exclusivo",
           "E-commerces completos e seguros",
@@ -81,7 +81,7 @@ export default {
         title: "Design e UX",
         details:
           "Identidade visual marcante e interfaces intuitivas que conectam sua marca com os usuários. <br>Criamos experiências digitais memoráveis que geram engajamento e fortalecem sua presença no mercado.",
-        action: "Solicitar um orçamento",
+        action: "Ver preço",
         itens: [
           "Criação de logo e identidade visual",
           "Design de interfaces centrado no usuário",
@@ -96,7 +96,7 @@ export default {
         title: "Marketing Digital e SEO",
         details:
           "Estratégias completas de SEO e tráfego pago que posicionam sua marca nos primeiros resultados.<br>Atraia visitantes qualificados e maximize seu ROI com campanhas orientadas a resultados.",
-        action: "Solicitar um orçamento",
+        action: "Ver preço",
         itens: [
           "Análise completa de SEO on-page e off-page",
           "Otimização técnica para mecanismos de busca",
@@ -111,7 +111,7 @@ export default {
         title: "Sistemas de Gestão (ERP e CRM)",
         details:
           "Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções<br>integradas centralizam informações, organizam seu funil de vendas e otimizam todas as operações.",
-        action: "Solicitar um orçamento",
+        action: "Ver preço",
         itens: [
           "Análise de processos e necessidades",
           "Implementação personalizada",
