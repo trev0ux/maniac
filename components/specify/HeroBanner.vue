@@ -32,17 +32,19 @@
                     loading="lazy"
                     placeholder 
                     ref="image1" 
-                    src="/mbaile2.png" 
+                    src="/mbaile2.webp" 
                     alt="mobile"/>
                 </div>
                 <div>
-                    <NuxtImg ref="image2" src="/image-project.png" alt="mobile" />
+                    <NuxtImg ref="image2" src="/image-project.webp" alt="mobile"                     format="webp" 
+                    loading="lazy"
+ />
                 </div>
             </article>
         </swiper-slide>
         <swiper-slide>
             <div class="container-fluid banner__image-project mt-5">
-                <NuxtImg src="/mockupdesk2.png" 
+                <NuxtImg src="/mockupdesk2.webp" 
                             alt="desktop"
                             format="webp" 
                     loading="lazy"

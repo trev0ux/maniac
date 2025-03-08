@@ -11,7 +11,7 @@
         </div>
         <article class="row">
             <div class="services__image">
-                <NuxtImg src="/computer.png" alt="Team"                    format="webp" 
+                <NuxtImg src="/computer.webp" alt="Team"                    format="webp" 
                     loading="lazy"
                     placeholder  />
             </div>

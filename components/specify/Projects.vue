@@ -11,7 +11,7 @@
         </div>
         <article>
             <div>
-                <NuxtImg src="/whatsapp-api.png" alt="WhatsApp API Project"                    format="webp" 
+                <NuxtImg src="/whatsapp-api.webp" alt="WhatsApp API Project"                    format="webp" 
                     loading="lazy"
                     placeholder  />
                 <div>
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div>
-                <NuxtImg src="/taxpay.png" alt="Taxpay Projeto"                    format="webp" 
+                <NuxtImg src="/taxpay.webp" alt="Taxpay Projeto"                    format="webp" 
                     loading="lazy"
                     placeholder  />
                 <div>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div>
-                <NuxtImg src="/remotando.png" alt="Remotando Project"                    format="webp" 
+                <NuxtImg src="/remotando.webp" alt="Remotando Project"                    format="webp" 
                     loading="lazy"
                     placeholder />
                 <div>
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div>
-                <NuxtImg src="/ebookparking.png" alt="Ebookparking Projeto"                    format="webp" 
+                <NuxtImg src="/ebookparking.webp" alt="Ebookparking Projeto"                    format="webp" 
                     loading="lazy"
                     placeholder  />
                 <div>

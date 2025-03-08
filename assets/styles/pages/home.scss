@@ -638,7 +638,7 @@
         }
         h3 {
             position: relative;
-            @include font-size($font-x-large);
+            @include font-size($font-xx-big);
             color: var(--light-black);
 
             font-weight: $font-weight--semibold;
