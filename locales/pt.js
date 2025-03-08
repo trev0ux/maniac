@@ -24,7 +24,7 @@ export default {
   ],
   projects: {
     title:
-      "De projeto em projeto - ajudamos sua marca a crescer e mostrar seumelhor para o mundo",
+      "De projeto em projeto - ajudamos sua marca a crescer e mostrar seu melhor para o mundo",
     description: "(Projetos desenvolvidos)",
     whatsapp: { name: "Whatsapp API - Volare Host", type: "Landing Page" },
     taxpay: { name: "Taxpay", type: "Site institucional" },

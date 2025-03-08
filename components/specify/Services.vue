@@ -3,8 +3,8 @@
         <div class="services__info">
             <div>
                 <span>02</span>
-                <h3 aria-label="Simples e eficiente - entregamos soluções fora da curva que deixam uma impressão duradoura nos seus clientes">
-                    <WordAnimation content="Simples e eficiente - entregamos soluções fora da curva que deixam uma impressão duradoura nos seus clientes"/>
+                <h3 :aria-label="$t('services.title')">
+                    <WordAnimation :content="$t('services.title')"/>
                 </h3>
             </div>
             <h4>{{ $t('services.description') }}</h4>
