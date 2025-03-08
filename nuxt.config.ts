@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         },
         title: "miraisoft: agência digital | criação de sites",
         meta: [
-          { hid: 'description', name: 'description', content: 'A miraisoft é uma agência digital especializada em criação de sites, e-commerces e sistemas de gestão (ERP e CRM). Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
+          { hid: 'description', name: 'description', content: 'A Miraisoft é uma agência digital especializada em criação de sites, e-commerces e sistemas de gestão (ERP e CRM). Criamos experiências digitais criativas e fora da curva para impulsionar seu negócio.' },
           { hid: 'keywords', name: 'keywords', content: 'miraisoft, agencia miraisoft, miraisoft software, criar site, criação de sites profissionais, criação de sites em salvador, criação de sites baratos, e-commerce, branding, criação de site, agência digital, Brasil, design de marca, criação de logo, soluções digitais' },
           { hid: 'author', name: 'author', content: 'miraisoft: agência digital | criação de sites' },
     
