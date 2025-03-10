@@ -8,8 +8,8 @@
         </div>
         <div>
           <ul>
-          <li><NuxtLink to="#services">{{ $t('footer.services') }}</NuxtLink></li>
-          <li><NuxtLink to="#projetos">{{ $t('footer.projects') }}</NuxtLink></li>
+            <li><NuxtLink to="#services">Serviços</NuxtLink></li>
+            <li><NuxtLink to="#projetos">Projetos</NuxtLink></li>
           </ul>
           <ul>
               <li><h5>Redes Sociais</h5></li>

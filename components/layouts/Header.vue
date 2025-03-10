@@ -7,7 +7,7 @@
       </NuxtLink>
       <div class="d-flex gap-3 align-items-center">
         <NuxtLink class="btn navbar__budget-mobile d-lg-none" to="https://wa.me/5571991178092" external>
-          {{ $t('header.action') }}
+          Pedir um orçamento
         </NuxtLink>
         <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"
           :class="(isMobileMenuOpen ? 'navbar__burger-btn--open' : '')">
@@ -20,17 +20,17 @@
         <div>
           <ul>
             <li>
-              <NuxtLink to="#projetos" @click="toggleMobileMenu">{{ $t('header.projects') }}</NuxtLink>
+              <NuxtLink to="#projetos" @click="toggleMobileMenu">Projetos</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#servicos" @click="toggleMobileMenu">{{ $t('header.work') }}</NuxtLink>
+              <NuxtLink to="#servicos" @click="toggleMobileMenu">Nosso trabalho</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#servicos-completo" @click="toggleMobileMenu">{{ $t('header.services') }}</NuxtLink>
+              <NuxtLink to="#servicos-completo" @click="toggleMobileMenu">Serviços</NuxtLink>
             </li>
             <li class=" navbar__budget d-none d-lg-block">
               <NuxtLink class="btn" to="https://wa.me/5571991178092" external>
-                {{ $t('header.action') }}
+                Pedir um orçamento
               </NuxtLink>
             </li>
           </ul>
