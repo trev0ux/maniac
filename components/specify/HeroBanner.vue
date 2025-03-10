@@ -1,14 +1,14 @@
 <template>
     <section>
         <div class="banner container">
-            <h1 aria-label="Sites e sistemas que não só resolvem problemas: impressionam seu cliente e te fazem vender mais.">
-                <WordAnimation content="Sites e sistemas que não só resolvem problemas: impressionam seu cliente e te fazem vender mais." />
+            <h1 :aria-label="$t('hero.title')">
+                <WordAnimation :content="$t('hero.title')" />
             </h1>
             <h2>
-                Criamos experiências digitais fora da curva com o objetivo de expandir seu negócio com resultados mensuráveis!
+                {{ $t('hero.subtitle') }}
             </h2>
             <NuxtLink class="btn btn-primary" to="#servicos-completo">
-                Conheça nossos serviços
+                    {{ $t('hero.action') }}
                 <div class="arrows-block">
                     <div class="arrows-icon">
                         <Icon name="ArrowIcon"></Icon>
