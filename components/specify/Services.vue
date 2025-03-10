@@ -3,11 +3,11 @@
         <div class="services__info">
             <div>
                 <span>02</span>
-                <h3 :aria-label="$t('services.title')">
-                    <WordAnimation :content="$t('services.title')"/>
+                <h3 aria-label="Simples e eficiente - entregamos soluções fora da curva que deixam uma impressão duradoura nos seus clientes">
+                    <WordAnimation content="Simples e eficiente - entregamos soluções fora da curva que deixam uma impressão duradoura nos seus clientes"/>
                 </h3>
             </div>
-            <h4>{{ $t('services.description') }}</h4>
+            <h4>(Nossos serviços)</h4>
         </div>
         <article class="row">
             <div class="services__image">
@@ -18,7 +18,7 @@
             <div>
                 <div class="services__subtitle">
                     <h3>
-                        <Icon name="ArrowIcon"></Icon> {{ $t('services.subtitle') }}
+                        <Icon name="ArrowIcon"></Icon> O que nós oferecemos
                     </h3>
                 </div>
                 <article class="services__accordion-container">
@@ -50,14 +50,25 @@
 
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
-import { useI18n } from 'vue-i18n';
 
-const { locale, messages } = useI18n(); 
 const currentIndex = ref(0);
 const progress = ref(null)
 const interval = ref(null)
-const serviceList = messages.value[locale.value].services.list;
-const services = ref(serviceList)
+
+const services = ref([
+    {
+        title: "Design e UX",
+        content: "Identidade visual marcante e interfaces intuitivas que engajam usuários. Criamos experiências digitais que fortalecem sua marca e melhoram a jornada do cliente."
+    },
+    {
+        title: "Desenvolvimento de Sites",
+        content: "Sites rápidos, seguros e otimizados para conversão. Desenvolvemos plataformas responsivas com foco em usabilidade e resultados mensuráveis para sua empresa. Além de páginas estratégicas de alta conversão para suas campanhas. Design otimizado para capturar leads qualificados e aumentar suas vendas."
+    },
+    {
+        title: "Sistemas de Gestão (ERP e CRM)",
+        content: "Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções integradas de ERP e CRM centralizam informações, organizam seu funil de vendas e otimizam todas as operações da sua empresa."
+    },
+])
 
 function toggleService(index) {
     currentIndex.value = index;
