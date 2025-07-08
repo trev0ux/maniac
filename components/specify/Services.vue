@@ -26,7 +26,7 @@
                         <div v-for="(service, index) in services" :key="service.title"
                             :class="[index === currentIndex ? 'services__progress-bar services__progress-bar--active' : 'services__progress-bar']">
                             <h3 @click="toggleService(index)">
-                                {{ service.title }}
+                                {{ service.title.loc.source }}
                                 <span :style="{
                                     width: index === currentIndex ? `${progress}%` : '0%',
                                 }"></span>
@@ -36,7 +36,7 @@
                             <article v-for="(service, index) in services" :key="service.title">
                                 <transition-group name="slide-swap">
                                     <p v-if="index === currentIndex" class="services__content">
-                                        {{ service.content }}
+                                        {{ service.content.loc.source }}
                                     </p>
                                 </transition-group>
                             </article>
@@ -51,24 +51,14 @@
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
 
+const { tm } = useI18n(); 
 const currentIndex = ref(0);
 const progress = ref(null)
 const interval = ref(null)
 
-const services = ref([
-    {
-        title: "Design e UX",
-        content: "Identidade visual marcante e interfaces intuitivas que engajam usuários. Criamos experiências digitais que fortalecem sua marca e melhoram a jornada do cliente."
-    },
-    {
-        title: "Desenvolvimento de Sites",
-        content: "Sites rápidos, seguros e otimizados para conversão. Desenvolvemos plataformas responsivas com foco em usabilidade e resultados mensuráveis para sua empresa. Além de páginas estratégicas de alta conversão para suas campanhas. Design otimizado para capturar leads qualificados e aumentar suas vendas."
-    },
-    {
-        title: "Sistemas de Gestão (ERP e CRM)",
-        content: "Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções integradas de ERP e CRM centralizam informações, organizam seu funil de vendas e otimizam todas as operações da sua empresa."
-    },
-])
+const services = computed(() => {
+  return tm('services.list')
+})
 
 function toggleService(index) {
     currentIndex.value = index;
