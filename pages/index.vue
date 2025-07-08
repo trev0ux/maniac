@@ -1,6 +1,6 @@
 <template>
   <div class="homepage">
-    <NuxtLink class="homepage__whatsapp-icon" to="https://wa.me/5571991178092" external>
+    <NuxtLink class="homepage__whatsapp-icon" to="https://wa.me/5571992834144" external>
       <NuxtImg src="/whatsapp.png" alt="Whatsapp para falar conosco"></NuxtImg>
     </NuxtLink>
     <div class="w-100">

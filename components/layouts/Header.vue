@@ -6,9 +6,7 @@
         miraisoft
       </NuxtLink>
       <div class="d-flex gap-3 align-items-center">
-        <NuxtLink class="btn navbar__budget-mobile d-lg-none" to="https://wa.me/5571991178092" external>
-          {{ $t('header.action') }}
-        </NuxtLink>
+                      <LangSwitcher/>
         <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"
           :class="(isMobileMenuOpen ? 'navbar__burger-btn--open' : '')">
           <span></span>
@@ -28,10 +26,13 @@
             <li>
               <NuxtLink to="#servicos-completo" @click="toggleMobileMenu">{{ $t('header.services') }}</NuxtLink>
             </li>
-            <li class=" navbar__budget d-none d-lg-block">
-              <NuxtLink class="btn" to="https://wa.me/5571991178092" external>
+            <li class=" navbar__budget">
+              <NuxtLink class="btn" to="https://wa.me/5571992834144" external>
                 {{ $t('header.action') }}
               </NuxtLink>
+            </li>
+             <li class="d-none d-lg-block">    
+              <LangSwitcher/>
             </li>
           </ul>
         </div>
@@ -43,10 +44,12 @@
 <script>
 import { Icon } from "#components";
 import { onMounted, onUnmounted, ref } from "vue";
+import LangSwitcher from "../specify/LangSwitcher.vue";
 
 export default {
   components: {
     Icon,
+    LangSwitcher
   },
   data() {
     return {

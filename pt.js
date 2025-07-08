@@ -65,7 +65,7 @@ export default {
       {
         title: "Desenvolvimento Web Completo",
         details:
-          "Sites institucionais, e-commerces e landing pages de alta conversão. <br>Desenvolvemos plataformas responsivas e otimizadas que transformam visitantes em clientes e impulsionam seu negócio online.",
+          "Sites institucionais, e-commerces e landing pages de alta conversão. Desenvolvemos plataformas responsivas e otimizadas que transformam visitantes em clientes e impulsionam seu negócio online.",
         action: "Ver preço",
         itens: [
           "Sites institucionais com design exclusivo",
@@ -80,7 +80,7 @@ export default {
       {
         title: "Design e UX",
         details:
-          "Identidade visual marcante e interfaces intuitivas que conectam sua marca com os usuários. <br>Criamos experiências digitais memoráveis que geram engajamento e fortalecem sua presença no mercado.",
+          "Identidade visual marcante e interfaces intuitivas que conectam sua marca com os usuários.  Criamos experiências digitais memoráveis que geram engajamento e fortalecem sua presença no mercado.",
         action: "Ver preço",
         itens: [
           "Criação de logo e identidade visual",
@@ -95,7 +95,7 @@ export default {
       {
         title: "Marketing Digital e SEO",
         details:
-          "Estratégias completas de SEO e tráfego pago que posicionam sua marca nos primeiros resultados.<br>Atraia visitantes qualificados e maximize seu ROI com campanhas orientadas a resultados.",
+          "Estratégias completas de SEO e tráfego pago que posicionam sua marca nos primeiros resultados. Atraia visitantes qualificados e maximize seu ROI com campanhas orientadas a resultados.",
         action: "Ver preço",
         itens: [
           "Análise completa de SEO on-page e off-page",
@@ -110,7 +110,7 @@ export default {
       {
         title: "Sistemas de Gestão (ERP e CRM)",
         details:
-          "Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções<br>integradas centralizam informações, organizam seu funil de vendas e otimizam todas as operações.",
+          "Automatize processos e potencialize o relacionamento com seus clientes. Nossas soluções integradas centralizam informações, organizam seu funil de vendas e otimizam todas as operações.",
         action: "Ver preço",
         itens: [
           "Análise de processos e necessidades",

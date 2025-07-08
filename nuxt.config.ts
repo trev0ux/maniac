@@ -47,49 +47,39 @@ export default defineNuxtConfig({
     }]
   ],
 
-  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts", '@nuxtjs/sitemap', '@nuxtjs/robots'],
-
-  fonts: {
-    families: [
-      {
-        name: 'Satoshi',
-        local: 'Satoshi',
-        variants: [
-          {
-            src: '/fonts/Satoshi-Light.otf',
-            weight: 300,
-            style: 'normal'
-          },
-          {
-            src: '/fonts/Satoshi-Regular.otf',
-            weight: 400,
-            style: 'normal'
-          },
-          {
-            src: '/fonts/Satoshi-Medium.otf',
-            weight: 500,
-            style: 'normal'
-          },
-          {
-            src: '/fonts/Satoshi-Bold.otf',
-            weight: 700,
-            style: 'normal'
-          },
-          {
-            src: '/fonts/Satoshi-Black.otf',
-            weight: 800,
-            style: 'normal'
-          }
-        ],
-        display: 'swap',
-      }
-    ]
-  },
+  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts", '@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxtjs/i18n'],
 
   plugins: [
     '@/plugins/lenis.client.ts',
     '@/plugins/swiper.js'
   ],
+
+  i18n: {
+    baseUrl: 'https://miraisoft.digital',
+    locales: [
+      {
+        code: 'en',
+        language: 'en-US',
+        name: 'English',
+        file: 'en.js'
+      },
+      {
+        code: 'pt',
+        language: 'pt-BR',
+        name: 'Português',
+        file: 'pt.js'
+      }
+    ],
+    lazy: true,
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: false
+    }
+  },
 
   compatibilityDate: '2025-03-08'
 })

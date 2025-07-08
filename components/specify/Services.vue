@@ -26,7 +26,7 @@
                         <div v-for="(service, index) in services" :key="service.title"
                             :class="[index === currentIndex ? 'services__progress-bar services__progress-bar--active' : 'services__progress-bar']">
                             <h3 @click="toggleService(index)">
-                                {{ service.title }}
+                                {{ service.title.loc.source }}
                                 <span :style="{
                                     width: index === currentIndex ? `${progress}%` : '0%',
                                 }"></span>
@@ -36,7 +36,7 @@
                             <article v-for="(service, index) in services" :key="service.title">
                                 <transition-group name="slide-swap">
                                     <p v-if="index === currentIndex" class="services__content">
-                                        {{ service.content }}
+                                        {{ service.content.loc.source }}
                                     </p>
                                 </transition-group>
                             </article>
@@ -50,14 +50,15 @@
 
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
-import { useI18n } from 'vue-i18n';
 
-const { locale, messages } = useI18n(); 
+const { tm } = useI18n(); 
 const currentIndex = ref(0);
 const progress = ref(null)
 const interval = ref(null)
-const serviceList = messages.value[locale.value].services.list;
-const services = ref(serviceList)
+
+const services = computed(() => {
+  return tm('services.list')
+})
 
 function toggleService(index) {
     currentIndex.value = index;

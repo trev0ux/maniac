@@ -13,10 +13,10 @@
         <article>
             <div v-for="(item, index) in articlesList" :key="index + '_article'" class="plans__item">
                 <div>
-                    <h4>{{ item.title }}</h4>
-                    <p class="plans__details"> {{ item.details }} </p>
+                    <h4>{{ item.title.loc.source }}</h4>
+                    <p class="plans__details"> {{ item.details.loc.source }} </p>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
-                        {{ item.action }}
+                        {{ item.action.loc.source }}
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -29,7 +29,7 @@
                     <ul>
                         <li v-for="(bullet, index) in item.itens" :key="index + '_li'">
                             <Icon name="CheckIcon"></Icon>
-                            {{bullet}}
+                            {{bullet.loc.source}}
                         </li>
                     </ul>
                 </div>
@@ -39,7 +39,9 @@
 </template>
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
-import { useI18n } from 'vue-i18n';
-const { locale, messages } = useI18n();
-const articlesList = messages.value[locale.value].products.articles;
+const { tm } = useI18n();
+
+const articlesList = computed(() => {
+  return tm('products.articles')
+})
 </script>

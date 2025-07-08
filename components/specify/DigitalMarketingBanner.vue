@@ -2,30 +2,34 @@
   <div class="banner-container" ref="container">
     <div class="banner-content" :style="{ transform: `translateX(${position}px)` }">
       <span v-for="(term, index) in displayedTerms" :key="index" class="term">
-        {{ term }}<span class="middle-dot"> · </span>
+        {{ term.loc.source }}<span class="middle-dot"> · </span>
       </span>
     </div>
   </div>
 </template>
 
 <script>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useI18n } from 'vue-i18n';
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 
 
 export default {
   name: 'DigitalMarketingBanner',
   setup() {
-    const { locale, messages } = useI18n(); 
+    const { t } = useI18n(); 
     const position = ref(0)
     const container = ref(null)
     let animationId = null
     let contentWidth = 0
     let singleSetWidth = 0
     const SPEED = 1
-    const marketingTerms = messages.value[locale.value].marketing_terms;
 
-    const displayedTerms = computed(() => [...marketingTerms, ...marketingTerms, ...marketingTerms])
+    const { tm } = useI18n()
+    
+    const marketingTerms = computed(() => {
+      return tm('marketing_terms')
+    })
+
+    const displayedTerms = computed(() => [...marketingTerms.value, ...marketingTerms.value, ...marketingTerms.value])
 
     const animate = () => {
       position.value -= SPEED
@@ -37,15 +41,30 @@ export default {
       animationId = requestAnimationFrame(animate)
     }
 
-    onMounted(() => {
+    const initializeAnimation = () => {
       const contentEl = container.value?.querySelector('.banner-content')
       if (contentEl) {
         contentWidth = contentEl.offsetWidth
         singleSetWidth = contentWidth / 3
         
         position.value = 0
+        if (animationId) {
+          cancelAnimationFrame(animationId)
+        }
         animate()
       }
+    }
+
+    onMounted(() => {
+      nextTick(() => {
+        initializeAnimation()
+      })
+    })
+
+    watch(marketingTerms, () => {
+      nextTick(() => {
+        initializeAnimation()
+      })
     })
 
     onUnmounted(() => {
@@ -57,7 +76,8 @@ export default {
     return {
       position,
       displayedTerms,
-      container
+      container,
+      marketingTerms
     }
   }
 }
