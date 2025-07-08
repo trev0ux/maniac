@@ -6,7 +6,7 @@
         miraisoft
       </NuxtLink>
       <div class="d-flex gap-3 align-items-center">
-                      <LangSwitcher/>
+                      <LangSwitcher class="d-block d-lg-none"/>
         <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"
           :class="(isMobileMenuOpen ? 'navbar__burger-btn--open' : '')">
           <span></span>
