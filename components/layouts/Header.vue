@@ -18,13 +18,13 @@
         <div>
           <ul>
             <li>
-              <NuxtLink to="#projetos" @click="toggleMobileMenu">{{ $t('header.projects') }}</NuxtLink>
+              <NuxtLink to="#projetos" @click="toggleMobileMenu">Projetos</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#servicos" @click="toggleMobileMenu">{{ $t('header.work') }}</NuxtLink>
+              <NuxtLink to="#servicos" @click="toggleMobileMenu">Nosso trabalho</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#servicos-completo" @click="toggleMobileMenu">{{ $t('header.services') }}</NuxtLink>
+              <NuxtLink to="#servicos-completo" @click="toggleMobileMenu">Serviços</NuxtLink>
             </li>
             <li class=" navbar__budget">
               <NuxtLink class="btn" to="https://wa.me/5571992834144" external>

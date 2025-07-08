@@ -3,15 +3,15 @@
         <div class="plans__info">
             <div>
                 <span>03</span>
-                <h3 :aria-label="$t('products.title')">
+                <h3 aria-label="Soluções digitais de alto impacto - Impulsionamos seu negócio com estratégias personalizadas que geram resultados">
                     <WordAnimation
-                        :content="$t('products.title')" />
+                        content="Soluções digitais de alto impacto - Impulsionamos seu negócio com estratégias personalizadas que geram resultados" />
                 </h3>
             </div>
-            <h4>{{ $t('products.description') }}</h4>
+            <h4>(Nossos serviços)</h4>
         </div>
         <article>
-            <div v-for="(item, index) in articlesList" :key="index + '_article'" class="plans__item">
+            <div class="plans__item">
                 <div>
                     <h4>{{ item.title.loc.source }}</h4>
                     <p class="plans__details"> {{ item.details.loc.source }} </p>
@@ -27,7 +27,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li v-for="(bullet, index) in item.itens" :key="index + '_li'">
+                        <li>
                             <Icon name="CheckIcon"></Icon>
                             {{bullet.loc.source}}
                         </li>
@@ -37,6 +37,7 @@
         </article>
     </section>
 </template>
+
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
 const { tm } = useI18n();

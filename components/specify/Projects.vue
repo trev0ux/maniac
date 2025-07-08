@@ -3,11 +3,11 @@
         <div class="projects__info">
             <div>
                 <span>01</span>
-                <h3 :aria-label="$t('projects.title')">
-                    <WordAnimation :content="$t('projects.title')"/>
+                <h3 aria-label="De projeto em projeto - ajudamos sua marca a crescer e mostrar seumelhor para o mundo">
+                    <WordAnimation content="De projeto em projeto - ajudamos sua marca a crescer e mostrar seumelhor para o mundo" />
                 </h3>
             </div>
-            <h4>{{ $t('projects.description') }}</h4>
+            <h4>(Projetos desenvolvidos)</h4>
         </div>
         <article>
             <div>
@@ -15,8 +15,8 @@
                     loading="lazy"
                     placeholder  />
                 <div>
-                    <h4>{{ $t('projects.whatsapp.name') }}</h4>
-                    <h4>{{ $t('projects.whatsapp.type') }}</h4>
+                    <h4>Whatsapp API - Volare Host</h4>
+                    <h4>Landing Page</h4>
                 </div>
             </div>
             <div>
@@ -24,8 +24,8 @@
                     loading="lazy"
                     placeholder  />
                 <div>
-                    <h4>{{ $t('projects.taxpay.name') }}</h4>
-                    <h4>{{ $t('projects.taxpay.type') }}</h4>
+                    <h4>Taxpay</h4>
+                    <h4>Site institucional</h4>
                 </div>
             </div>
             <div>
@@ -33,8 +33,8 @@
                     loading="lazy"
                     placeholder />
                 <div>
-                    <h4>{{ $t('projects.remotando.name') }}</h4>
-                    <h4>{{ $t('projects.remotando.type') }}</h4>
+                    <h4>Remotando</h4>
+                    <h4>Site</h4>
                 </div>
             </div>
             <div>
@@ -42,8 +42,8 @@
                     loading="lazy"
                     placeholder  />
                 <div>
-                    <h4>{{ $t('projects.ebookparking.name') }}</h4>
-                    <h4>{{ $t('projects.ebookparking.type') }}</h4>
+                    <h4>Ebookparking</h4>
+                    <h4>Sistema de agendamento para estacionamento</h4>
                 </div>
             </div>
         </article>
