@@ -61,7 +61,7 @@ const toggleLanguage = () => {
     position: relative;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, .6);
+    border: 1px solid rgba(255, 255, 255, .3);
     border-radius: 25px;
     padding: 4px;
     transition: all 0.3s ease;
