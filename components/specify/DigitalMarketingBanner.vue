@@ -2,7 +2,7 @@
   <div class="banner-container" ref="container">
     <div class="banner-content" :style="{ transform: `translateX(${position}px)` }">
       <span v-for="(term, index) in displayedTerms" :key="index" class="term">
-        {{ term.loc.source }}<span class="middle-dot"> · </span>
+        {{ rt(term) }}<span class="middle-dot"> · </span>
       </span>
     </div>
   </div>
@@ -15,7 +15,7 @@ import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 export default {
   name: 'DigitalMarketingBanner',
   setup() {
-    const { t } = useI18n(); 
+    const { tm, rt } = useI18n()
     const position = ref(0)
     const container = ref(null)
     let animationId = null
@@ -23,13 +23,14 @@ export default {
     let singleSetWidth = 0
     const SPEED = 1
 
-    const { tm } = useI18n()
-    
     const marketingTerms = computed(() => {
       return tm('marketing_terms')
     })
 
-    const displayedTerms = computed(() => [...marketingTerms.value, ...marketingTerms.value, ...marketingTerms.value])
+    const displayedTerms = computed(() => {
+      const terms = Array.isArray(marketingTerms.value) ? marketingTerms.value : []
+      return [...terms, ...terms, ...terms]
+    })
 
     const animate = () => {
       position.value -= SPEED
@@ -77,7 +78,8 @@ export default {
       position,
       displayedTerms,
       container,
-      marketingTerms
+      marketingTerms,
+      rt
     }
   }
 }
