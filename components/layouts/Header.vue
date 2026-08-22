@@ -6,7 +6,6 @@
         miraisoft
       </NuxtLink>
       <div class="d-flex gap-3 align-items-center">
-                      <LangSwitcher class="d-block d-lg-none"/>
         <button class="navbar__burger-btn d-flex d-lg-none" @click="toggleMobileMenu" aria-label="Toggle mobile menu"
           :class="(isMobileMenuOpen ? 'navbar__burger-btn--open' : '')">
           <span></span>
@@ -28,11 +27,8 @@
             </li>
             <li class=" navbar__budget">
               <NuxtLink class="btn" to="https://wa.me/5571992834144" external>
-                {{ $t('header.action') }}
+                Pedir um orçamento
               </NuxtLink>
-            </li>
-             <li class="d-none d-lg-block">    
-              <LangSwitcher/>
             </li>
           </ul>
         </div>
@@ -44,12 +40,10 @@
 <script>
 import { Icon } from "#components";
 import { onMounted, onUnmounted, ref } from "vue";
-import LangSwitcher from "../specify/LangSwitcher.vue";
 
 export default {
   components: {
     Icon,
-    LangSwitcher
   },
   data() {
     return {

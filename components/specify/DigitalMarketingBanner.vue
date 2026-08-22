@@ -2,20 +2,19 @@
   <div class="banner-container" ref="container">
     <div class="banner-content" :style="{ transform: `translateX(${position}px)` }">
       <span v-for="(term, index) in displayedTerms" :key="index" class="term">
-        {{ rt(term) }}<span class="middle-dot"> · </span>
+        {{ term }}<span class="middle-dot"> · </span>
       </span>
     </div>
   </div>
 </template>
 
 <script>
-import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 
 
 export default {
   name: 'DigitalMarketingBanner',
   setup() {
-    const { tm, rt } = useI18n()
     const position = ref(0)
     const container = ref(null)
     let animationId = null
@@ -23,14 +22,23 @@ export default {
     let singleSetWidth = 0
     const SPEED = 1
 
-    const marketingTerms = computed(() => {
-      return tm('marketing_terms')
-    })
+    const marketingTerms = [
+      'E-commerce',
+      'UX Design',
+      'Web Design',
+      'Landing Pages',
+      'Site Institucional',
+      'SEO',
+      'Branding',
+      'Design Gráfico',
+    ]
 
-    const displayedTerms = computed(() => {
-      const terms = Array.isArray(marketingTerms.value) ? marketingTerms.value : []
-      return [...terms, ...terms, ...terms]
-    })
+    // Triplicado para o loop infinito do banner ficar contínuo
+    const displayedTerms = computed(() => [
+      ...marketingTerms,
+      ...marketingTerms,
+      ...marketingTerms,
+    ])
 
     const animate = () => {
       position.value -= SPEED
@@ -62,12 +70,6 @@ export default {
       })
     })
 
-    watch(marketingTerms, () => {
-      nextTick(() => {
-        initializeAnimation()
-      })
-    })
-
     onUnmounted(() => {
       if (animationId) {
         cancelAnimationFrame(animationId)
@@ -78,8 +80,7 @@ export default {
       position,
       displayedTerms,
       container,
-      marketingTerms,
-      rt
+      marketingTerms
     }
   }
 }

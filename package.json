@@ -10,9 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.10.1",
     "@nuxt/image": "^1.7.0",
-    "@nuxtjs/i18n": "^9.5.5",
     "@nuxtjs/robots": "^4.1.9",
     "@nuxtjs/sitemap": "^6.1.2",
     "@studio-freight/lenis": "^1.0.42",
