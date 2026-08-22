@@ -11,12 +11,12 @@
             <h4>(Nossos serviços)</h4>
         </div>
         <article>
-            <div class="plans__item">
+            <div v-for="(item, index) in articlesList" :key="index + '_article'" class="plans__item">
                 <div>
-                    <h4>{{ item.title.loc.source }}</h4>
-                    <p class="plans__details"> {{ item.details.loc.source }} </p>
+                    <h4>{{ rt(item.title) }}</h4>
+                    <p class="plans__details"> {{ rt(item.details) }} </p>
                     <NuxtLink class="btn btn-primary w-100 d-flex align-items-center justify-content-between" external to="https://calendly.com/sua-empresa/30min">
-                        {{ item.action.loc.source }}
+                        {{ rt(item.action) }}
                         <div class="arrows-block">
                             <div class="arrows-icon">
                                 <Icon name="ArrowIcon"></Icon>
@@ -27,9 +27,9 @@
                 </div>
                 <div>
                     <ul>
-                        <li>
+                        <li v-for="(bullet, bulletIndex) in item.itens" :key="bulletIndex + '_li'">
                             <Icon name="CheckIcon"></Icon>
-                            {{bullet.loc.source}}
+                            {{ rt(bullet) }}
                         </li>
                     </ul>
                 </div>
@@ -40,9 +40,10 @@
 
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
-const { tm } = useI18n();
+const { tm, rt } = useI18n()
 
 const articlesList = computed(() => {
-  return tm('products.articles')
+  const articles = tm('products.articles')
+  return Array.isArray(articles) ? articles : []
 })
 </script>

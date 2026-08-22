@@ -23,20 +23,20 @@
                 </div>
                 <article class="services__accordion-container">
                     <div class="services__accordion-item">
-                        <div v-for="(service, index) in services" :key="service.title"
+                        <div v-for="(service, index) in services" :key="index"
                             :class="[index === currentIndex ? 'services__progress-bar services__progress-bar--active' : 'services__progress-bar']">
                             <h3 @click="toggleService(index)">
-                                {{ service.title.loc.source }}
+                                {{ rt(service.title) }}
                                 <span :style="{
                                     width: index === currentIndex ? `${progress}%` : '0%',
                                 }"></span>
                             </h3>
                         </div>
                         <section>
-                            <article v-for="(service, index) in services" :key="service.title">
+                            <article v-for="(service, index) in services" :key="index">
                                 <transition-group name="slide-swap">
                                     <p v-if="index === currentIndex" class="services__content">
-                                        {{ service.content.loc.source }}
+                                        {{ rt(service.content) }}
                                     </p>
                                 </transition-group>
                             </article>
@@ -51,9 +51,9 @@
 <script setup>
 import WordAnimation from "./WordAnimation.vue";
 
-const { tm } = useI18n(); 
+const { tm, rt } = useI18n()
 const currentIndex = ref(0);
-const progress = ref(null)
+const progress = ref(0)
 const interval = ref(null)
 
 const services = computed(() => {
