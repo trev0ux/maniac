@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: [{ src: '~/assets/styles/globals.scss', lang: 'sass' }],
+  css: ['~/assets/styles/globals.scss'],
   target: 'static',
 
   site: {
@@ -47,39 +47,12 @@ export default defineNuxtConfig({
     }]
   ],
 
-  modules: ['nuxt-icon', '@nuxt/image', "@nuxt/fonts", '@nuxtjs/sitemap', '@nuxtjs/robots', '@nuxtjs/i18n'],
+  modules: ['nuxt-icon', '@nuxt/image', '@nuxtjs/sitemap', '@nuxtjs/robots'],
 
   plugins: [
     '@/plugins/lenis.client.ts',
     '@/plugins/swiper.js'
   ],
-
-  i18n: {
-    baseUrl: 'https://miraisoft.digital',
-    locales: [
-      {
-        code: 'en',
-        language: 'en-US',
-        name: 'English',
-        file: 'en.js'
-      },
-      {
-        code: 'pt',
-        language: 'pt-BR',
-        name: 'Português',
-        file: 'pt.js'
-      }
-    ],
-    lazy: true,
-    defaultLocale: 'en',
-    strategy: 'no_prefix',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-      alwaysRedirect: false
-    }
-  },
 
   compatibilityDate: '2025-03-08'
 })

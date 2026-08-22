@@ -1,5 +1,15 @@
 @import "./_base/typography";
 @import "./_base/variables";
+
+// @font-face carregado uma única vez, aqui (nunca em <style scoped>).
+@import "./_base/fonts";
+
+// Define a fonte base do Bootstrap ANTES do import: assim --bs-body-font-family
+// nasce com a Satoshi e botões, inputs e demais componentes herdam a fonte,
+// em vez de dependerem só do override em `body`.
+$font-family-sans-serif: $font-family--primary;
+$font-family-base: $font-family--primary;
+
 @import "bootstrap/scss/bootstrap";
 
 html.lenis, html.lenis body {
